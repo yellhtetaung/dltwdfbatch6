@@ -1,0 +1,132 @@
+.div1{
+    width: 600px;
+    height: 200px;
+    background-color: orange;
+    color: blue;
+
+    /* margin: 20px; */
+        /* top&bottom left&right */
+    /* margin: 20px 50px; */
+    /* margin: 10px 30px 50px 100px; */
+
+
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+}
+.div1 .bank{
+    display: block;
+
+    margin-left: 400px;
+}
+.div1 .money{
+    display: block;
+
+    margin-left: 400px;
+}
+.div1 .coin{
+    display: block;
+
+    position: absolute;
+
+    margin-left: 500px;
+}
+.div2{
+    width: 600px;
+    height: 200px;
+    background-color: green;
+    color: blue;
+
+    margin-left: 20px;
+    /* margin-top: 100px; */
+
+    position: relative;
+}
+.div2 .bank{
+    display: block;
+
+    margin-left: 400px;
+}
+.div2 .money{
+    display: block;
+
+    margin-left: 400px;
+}
+.div2 .coin{
+    display: block;
+
+    position: absolute;
+
+    margin-left: 500px;
+}
+h1{
+    background-color: pink;
+    display: inline;
+}
+.display1{
+    width: 300px;
+    height: 100px;
+    background-color: silver;
+    border: 2px solid orange;
+            /* 0 - 1 */
+    /* opacity: 0; */
+
+    /* hidden to visible */
+    /* visibility: hidden; */
+
+            /* block/flex */
+    /* display: none; */
+
+            /* 0 to 1 */
+    /* transform: scale(0); */
+}
+.display2{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid silver;
+}
+.div3{
+    width: 600px;
+    height: 300px;
+    background-color: orange;
+    border: 2px solid green;
+
+    margin-left: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div3 .c1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: #fff;    
+    border-radius: 50%;
+
+    /* text-align: center;
+    line-height: 100px; */
+
+    display: flex;
+    /* hoz center */
+    justify-content: center;
+    /* var center */
+    align-items: center;
+}
+.div3 .c2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 50%;
+
+    /* text-align: center;
+    line-height: 100px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+:root{
+    --wcc: #f4f4f4;
+    --gyc: #777;
+    --dbc: #0c09b8;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Stick', sans-serif;
+
+    /* viewport height(vh) */
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    width: 480px;
+    background-color: var(--wcc);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+.container .form{
+    padding: 30px 40px;
+}
+.form .form-group{
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.form-group label{
+    display: block;
+    color: var(--gyc);
+
+    margin-bottom: 5px;
+}
+.form-group .form-control{
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+}
+.form-group .form-control::placeholder{
+    /* color: blue; */
+    color: rgba(0,0,0,0.3);
+}
+.form .btn{
+    font-family: inherit;
+    width: 100%;
+    background: var(--dbc);
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    padding: 10px;
+
+    /* transition: all 0.5s; */
+    
+}
+/* .form .btn:hover{
+    background-color: orange;
+} */
+.form .btn:active{
+    background-color: green;
+}

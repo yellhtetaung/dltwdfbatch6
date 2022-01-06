@@ -1,0 +1,689 @@
+HTML 5 (HyperText Markup Language)
+CSS 3
+Javascript (Basic + Intermediate)
+
+Bootstrap 5
+jQuery (Introduction)
+
+Third_Party Libraries
+Github
+Heroku(linux server Web upload)
+
+Programming (Developer)
+=======================
+
+computer (widnows, linux, mac developer)
+mobile (Android , IOS developer)
+Website (web developer)
+2type = Frontend Developer / Backend Developer
+
+tag
+element
+
+Elemnts 2 type
+==============
+
+1. inline elements
+2. block elements
+
+self cloing tag
+
+Tags
+=====
+h1 tag 		( block element )
+h2 tag		( block element )
+h3 tag		( block element )
+h4 tag		( block element )
+h5 tag		( block element )
+h6 tag		( block element )
+p tag 		( block element )
+br tag		( self cloing tag )
+b tag		( inline element )
+u tag 		( inline element )
+i tag 		( inline element )
+pre tag 	( block element )
+hr tag		( self cloing tag )
+marquee	tag	( block element )
+delete tag 	( inline element )
+small tag	( inline element )
+address tag	( block element )
+li tag 		( block element )
+img tag		( inline element )
+a tag       	( inline element )
+div tag		( block element )
+span tag	( inline element )
+form tag	( inline element )
+label tag	( inline element )
+input tag	( inline element )	
+audio tag	
+video tag
+iframe tag
+
+Attribute
+=========
+direction	( for marquee )
+type		( for ul/ol )
+src		( for img )
+width		( for img )
+height		( for img )
+alt		( for img )
+
+<marquee direction="_"></marquee>
+
+direction 	= attribute
+"_" 		= value
+
+direction attribute
+====================
+
+rigt, left, up, down
+
+Comment(2 types )
+===============
+1.single line comment 	<!--comment-->
+2.multi line comment	<!--multicomment-->
+
+List Style ( 2 types )
+=======================
+1.Unorder List
+2.Order List
+
+<li></li>		(child element)
+<ul></ul>	(parent element)
+<ol></ol>	(parent element)
+
+type="value"
+
+Unorder list types
+==================
+bulet (default)
+square
+circle
+none
+
+Order list types
+==================
+1 	(default)
+a
+A
+i	(greek)
+I	(greek)
+
+
+Image tag(2 types)
+==================
+global
+local
+
+file path
+========
+./	( current folder )
+../	( back )
+
+SEO (search engin optimization)
+==============================
+free
+paid
+
+absolutetag
+============
+<a herf="link">Google</a>
+
+Global 
+	http:// (not secure)
+	https:// (secure)
+
+    redirect လုပ်ထားသော website တွေက http ကို https ကို redirect လုပ်ပေးတယ်
+    SSL သည် server နဲ့ user ကြားကို secure ဖြစ်အောင်လုပ်ပေးသော service
+
+	<a href="link" target="_blank"></a>
+	<a href="link" target="_self"></a>
+	<a href="link" target="_parent"></a>
+	<a href="link" target="_top"></a>
+
+if you want to open with new tabs (target="_blank")
+default ( target="_self")
+
+parent က အလယ် center မှာ  popup box လေးနဲ့ ဖော်ပြချင်ရင်js မှာသုံးလို့ရတယ်။
+top က top မှာ popup box နဲ့ ဖော်ပြချင်ရင် js မှာ သုံးလို့ရတယ်။
+
+Local
+	<a href="target directory" target="_blank"></a>
+Global
+	<a href="http:// or https://" target="_blank"></a>
+Phone no
+	<a href="tel:phno"></a>
+Email
+	<a href="mailto:email"></a>
+skype
+	<a href="skype: email or ph or skype id"></a>
+
+Table tag
+=========
+<table>
+<thead>
+	<tr>
+		<th></th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td></td>
+	</tr>
+</tbody>
+<tfoot>
+
+	<tr>
+		<td></td>
+	</tr>
+</tfoot>
+</table>
+
+Attributes in Table
+=====================
+
+border="value"
+bgcolor="value"
+width="value"
+heght="value"
+<th></th> = bold and center
+aling="value"
+rowspan="value" default rowspan="1"
+rowspan သည် up to down ပဲ effect ဖြစ်တယ်။
+colspan="value" default colspan="1"
+
+Division Tag
+Div tag သည် အပိုင်းလေးတွေပိုင်းပြီးရေးတာ။
+
+Span tag သည် ရိုးရိုး font ရသည့် အပြင် inline element ဖြစ်သည်။
+
+id=""
+id တွေသည် unit ဖြစ်ရပါမယ်။
+
+Form tag
+=========
+	<form>
+		<label>First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" />
+
+		<br/>
+
+		<label>Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" />
+
+		<br/>
+
+		<label>Password</label>
+		<input type="password" name="password" id="password" class="" />
+		
+		<br/>
+		
+		<label>Age</label>
+		<input type="number" name="age" id="age" class="" />
+	</form>
+
+
+input tag
+==========
+
+type="text"
+type="password"
+type="number"
+type="email"
+type="radio"
+type="checkbox"
+type="date"
+type="time"
+type="datetime-local"
+type="range"
+type="file"
+type="hidden"
+type="reset"
+type="submit"
+
+name="string"	 ( for backend development )( text/password/number )
+id="id"		( for frontend developer and backend developer )
+class		( for frontend developer )
+placeholder	( for watermark )
+for=""		( for click to cursor ) (using id value )
+value		( for click input )
+checked	 	( stand alone attribute )( for default select )
+minlength	( စာလုံးရေကန့်သတ်ချင်ရင် သုံးတယ် )( for string )
+maxlength	( စာလုံးရေကန့်သတ်ချင်ရင် သုံးတယ် )( for string )
+min/max		( for number )
+required	( Stand Alone Attribute )
+autofocus	( Stand Alone Attribute )
+readonly	( Stand Alone Attribute )
+disabled	( stand alone attribute )( for default select )
+selected	( stand alone attribute )( for default select )
+multiple	( Stand Alone Attribute )
+autocomplete="" ( for disable history )
+
+
+<select>
+	<option selected disabled></option>
+	<option value=""></option>
+</select>
+
+disabled	( stand alone attribute )( for default select )
+selected	( stand alone attribute )( for default select )
+
+<input type="range" name="volume" id="volurme" class="" min="0" max="100" value="0" step="10"/>
+
+<textarea name="bio" id="bio" class="" rows="5" placeholder="Write Something..."></textarea>
+
+<input type="file" name="nrc" id="nrc" class="" multiple/>
+
+multiple	(Stand Alone Attribute)
+action		(for database connect)
+method
+enctype="multipart/form-data" (for change image file to binary )
+
+<input type="reset" name="reset" id="reset" class="" value="Cannel"/>
+
+<fieldset>
+	<legend></legend>
+</fieldset>
+
+audio and video
+
+<audio src="" controls loop></audio>
+
+<!DOCTYPE html>	( for html5 )
+
+CSS 3 type
+1. Internal Style
+2. Inline Style
+3. External Style
+
+1.Internal Style
+=================
+
+head tag နဲ့ body tag ကြားမှာ style tag နဲ့ရေးရပါတယ်။
+<style tye="text/css"></style> ( internal format )
+
+selectors{
+	properties: value;
+}
+
+selector တစ်ခုတည်းမှာ Proterties နှစ်ခုသုံလို့မရဘူး။
+အပေါ်မှာ သုံးပြီးသား selector ကို နောက်တစ်ကြိမ်ပြန်ခေါ်ပြီးသုံးမယ်ဆိုရင် overwrite လုပ်တယ်။
+
+<link href="target" rel="stylesheet" type="text/css"> (external format)
+
+Proterties
+============
+
+color 				(for change text color)
+font-size			( for change font size)
+text-align
+text-decoration
+letter-spacing	
+line-height
+text-shadow
+width
+height	
+border
+border-style
+border-color
+border-radius
+background-color	(solid color တစ်မျိုးတည်းပဲထည့်လို့ရတယ်။)
+background			(image လည်းထည့်လို့ရတယ်၊ solid color လည်းထည့်လို့ရတယ်။gradient color လည်း ထည့်လို့ရတယ်။)
+background-image	(solid color ထည့်လို့မရဘူး။ grandient color ထည့်လို့ရတယ်။ image ထည့်လို့ရတယ်။)
+background-repeat
+background-position	
+background-size
+cursor
+list-style-type
+list-style
+list-style-position
+font-family
+font-weight
+text-transform
+font-variant
+text-indent
+
+
+Comment
+========
+1. Single Line Comment (/**/)
+2. Multi Line Comment
+
+Single Selector
+Group Selector
+
+Seclector
+==========
+1. Element Selector (tag)
+2. ID Selector(#)
+3. Class Selector(.)
+4. Group Selector(,) single/multi(Element selector/id selector/class selector တွေကိုလည်း group selector ဖွဲ့လို့ရတယ်။)
+5. Universal Selector (*)
+6. Attribute Selector (tag[attribute])
+
+text-align
+===========
+left (default)
+right
+center
+justify
+
+text-decoration
+=================
+underline
+line-through(same del tag)
+overline
+
+letter-spacing
+===============
+*px
+
+line-height
+===========
+*px
+1,2,3(1line,2line,3line line နဲ့အလုပ်လုပ်တယ်)
+*%( 1line = 100% )
+
+text-shadow
+===========
+hoz = *px
+vel = *px
+bul = *px
+col = color
+leftupper(+x,-y)
+leftunder(+x,+y)
+rightupper(-x,-y)
+rightunder(-x,+y)
+
+icon add image
+==================
+<link href="target" rel="icon" type="image/fileformat(png,jpg)" sizes="16x16"/>
+
+Color
+======
+solid color
+naming color
+# color
+rgba color (r= red,g= green,b= blue,a= alpha code)
+
+gradient-color
+===============
+background:liner-gradient();
+
+
+background-color	(color ပဲထည့်လို့ရတယ်။)
+
+background			(image လည်းထည့်လို့ရတယ်၊ colorလည်းထည့်လို့ရတယ်။)
+
+background-image	(solid color ထည့်လို့မရဘူး။)
+
+background-repeat
+==================
+repeat		(default)
+no-repeat
+repeat-x
+repeat-y
+
+background-position:center; (document တစ်ခုလုံးရဲ့ အလယ်မှာရှိနေတာပါ)
+
+background:linear-gradient(
+	90deg,
+	red,
+	orange,
+	green
+);
+
+background:linear-gradient(
+	red 30%,
+	orange 0% 70%,
+	blue 0%
+);
+
+parent မပေးရင် 50/50 အလုပ်လုပ်တယ်။
+color တွေမှာ parent တွေပေးပြီး အရောင်ပျက်လုပ်လို့ရတယ်။
+အပေါ်က parent များပြီး အောက်က parcent နည်းရင် အရောင် ပျက်ဖြစ်မယ်။
+အပေါ်က parent နည်းပြီး အောက်က parcent များရင် အရောင် ရောမယ်။
+
+background:radial-gradient(blue,red,orange);
+
+background:linear-gradient(45deg,
+		rgba(198,45,127,0),
+		rgba(44,212,127,1)
+	),
+	url("../img/cover/bg2.jpg");
+
+background-size
+=================
+cover (fix ကျအောင်လုပ်လို့ရတယ်)
+
+border
+=======
+stroke style color
+5px    solid green
+
+border color default black color.
+
+border style
+=============
+solid
+dotted
+dashed
+double
+inset
+outset
+
+border-radius:*%;
+
+value တစ်ခုပေးရရင် အနားလေးဘက်လုံးပေါ်မှာ သက်ရောက်မှုရှိတယ်။
+
+ol/ul list style
+=================
+
+list-style-type:value;
+list-style:value;
+
+square
+circle
+none
+decimal					(1,2,3)
+decimal-leading-zero	(01,02,03)
+
+list-style-position:value;
+inside (list တွေကို border အတွင်းထဲထည့်ချင်ရင် သုံးတယ်)
+outside (default)
+
+
+name()  = function
+[]		= array
+
+background position
+=====================
+default (left top မှာရှိတယ်)
+
+center
+right
+left
+top
+bottom
+right top
+left top	(default)
+right bottom
+left bottom
+
+Pseudo Class(:)
+================
+
+parent တစ်ခုထဲမှာရှိရမယ်။
+
+class:keyword{}
+
+:first-child		(ပထမဆုံးတစ်ခုကို ခေါ်သုံးချင်ရင်သုံးတယ်)
+:first-of-type	
+:last-child			(နောက်ဆုံးတစ်ခုကို ခေါ်သုံးချင်ရင် သုံးတယ်)
+:last-of-type
+:nth-of-type(int) 	(type တူတဲ့ကောင်တွေကိုပဲ တွက်တယ်။ကိုယ်ပေးသလောက်အရေအတွက်ထိပဲ အလုပ်လုပ်တယ်။ ပိုသွားရင် အလုပ်မလုပ်ဘူး။)
+:nth-of-type(even)	(စုံဂဏန်တွေပဲခေါ်ချင်ရင် သုံးတယ်)
+:nth-of-type(odd)	(မဂဏန်းတွေပဲခေါ်ချင်ရင် သုံးတယ်)
+:nth-child()		(type မတူတဲ့ကောင်းတွေကိုပါ ထည့်တွက်သွားပါတယ်)
+
+ordnal number
+==============
+
+1st
+2nd
+3rd
+4th
+5..........nth
+
+Pseudo Element(::)
+===================
+
+::fist-line
+::before		(လက်ရှိ element တွေရဲ့ အရှေ့မှာ စာတွေကို ဖြည့်စွက်ချင်ရင် သုံးတယ်။ select လုပ်လို့မရဘူး။)
+::after			(လက်ရှိ element တွေရဲဲ့ နောက်ဆုံးမှာ စာတွေကို ဖြည့်စွက်ချင်ရင် သုံးတယ်။ select လုပ်လို့မရဘူး။)
+::first-letter	(ပထမစာလုံးကို select လုပ်တာ)
+::selection		(select လုပ်ရင် design ချိန်းချင်ရင်သုံးတယ်။)
+
+font style
+===========
+Local Font Integrate
+=====================
+i. Local Machine Integrate
+စကားစုတစ်စုထက်ပိုရရင် '' or ""  ထဲမှာရေးရမယ်။
+project တစ်ခုလုံးရဲ့ font တွေကို ပြောင်းချင်ရင် body ထဲမှာရေးရမယ်။
+
+ii. Porject Folder Integrate
+=============================
+font=>download=>extrat to directory
+
+Global Font Integrate
+======================
+<link/> ချိတ်ပြီး font-family ထည့်တာ။
+@import url("https://.....")
+
+font weight
+
+100 to 900
+
+Text transform
+===============
+
+uppercase
+lowercase
+capitalize
+
+Text Indentation
+
+text-indent:50px;
+
+a tag ကို visited လုပ်ပြီးတဲ့ link ကို အရောင်ပြောင်းချင်ရင်သုံးတယ်
+
+a:visited{
+	color: value;
+}
+a:hover{}
+
+padding
+
+padding: 10px 30px;
+top&bottom  left&right
+
+padding: 10px 10px 10px 10px;
+top righ bottom left
+
+Conic-gradient
+ခမောက်ပုံလည်သွားတယ်။ လက်ယာရစ် ပတ်သွားတယ်။
+
+
+=>JAVASCRIPT
+
+console ပေါ်မှာ တွက်ချက်မှုက ram ပေါ်မှာပဲ run တာဖြစ်တဲ့အတွက်ကြောင့် refresh လုပ်ရင် ပျောက်သွားပါတယ်။ console က temporary storage တစ်ခုသာဖြစ်တယ်။
+
+number တွေဆို '' or " " မလိုဘူး။
+string တွေဆို '' or " " ထဲထည့်ရေးရပါတယ်။
+
+number တွေအချင်းချင်း + လို့ရတယ်။number ဆိုရင် calculation လုပ်ငန်းကို လုပ်ဆောင်ပေးတယ်။
+
+string တွေအချင်းချင်းလည်း + လို့ရတယ်။ string ဆိုရင် concat လုပ်ပေးတယ်။
+
+Datatype
+
+number(0 to 9)
+string('aung aung','maung maung','2030',`zaw zaw`)
+boolean(true = 1,false = 0)
+
+JS 2 types
+
+1. Internal Style
+2. External Style
+
+console မှာ အဖြေထုတ်ချင်ရင် console.log(); နဲ့ ထုတ်ရတယ်။
+
+widnows.alert(); or alert(); widnows မှာ alert ထုတ်ပြချင်ရင် သုံးတယ်။ ok မနှိပ်မချင်းအလုပ် မလုပ်ဘူး။
+
+Comments
+
+// single line comment
+
+/* */ multi line comment
+
+Variable
+
+const (overwrite လုပ်လို့မရဘူး/value မပေးလို့မရဘူး)
+var
+let
+
+We can use 
+letter,number,_,$.
+var firstname
+var Firstname 
+var first_name
+var _firstname
+var $firstname 
+var firstname1
+
+We can't use
+connot start with number (var 2firstname)
+var first name 
+var first-name
+var @firstname 
+
+Multi Words
+var firstname = "kyaw" //Camel Case
+var first_name = "kyaw" //Underscore Case
+var FirstName = "kyaw" //Pascal Case
+
+body မှာ ရေးချင်ရင် document.write() ထဲမှာရေးရတယ်။
+html code တွေကို "" or '' or `` ထဲမှာထည့်ရတယ်။
+
+id ကိုပြန်ခေါ်ချင်ရင် document.getElementById("")
+html က စာကိုပြောင်းချင်ရင် 
+.textContent=""
+.innerText=""
+.innerHTML=""
+
+button ကို click လိုက်တာနဲ့ img တွေကို ပြောင်းချင်ရင်
+
+button မှာ onclick="" ပေးပြီးတော့
+img ရဲ့ id ပြန်ခေါ်ပြီး document.getElementById("").src="directory" ပေးလိုက်ရင် ပြောင်းလို့ရပါတယ်။
+
+group declaration
+
+let/var/const value, value, value;
+
+Arithmethic Operators (7 types)
+
++   adding
+-   substration 
+*   multiplication
+/   division
+%   modulus(remainder)
+++  increment (Before operation/After operation)
+--  decrement
+
+js မှာ Day and date ခေါ်ချင်ရင် class method သုံးရတယ်။  
+
+new Date(); ကို သုံးတယ်။
+
+console.warn();
+console.error();

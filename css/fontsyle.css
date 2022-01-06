@@ -1,0 +1,147 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+
+
+/*Local Font Intergrate*/
+/*i.Local Machine Intergrate*/
+/*ii.Project folder Intergrate*/
+
+
+/*i.Local Machine Intergrate*/
+/*.p1{
+	font-family: "Times New Roman";
+
+	font-family: Arial,Century,"Times New Roman";
+}*/
+
+/*.p2{
+	font-family: Century;
+}*/
+
+/*body{
+	font-family: Arial,Century,"Times New Roman";
+}*/
+
+
+/*Global Font Intergrate*/
+/*.p1{
+	font-family: 'Stick', sans-serif;
+}*/
+
+/*.p2{
+	font-family: 'Stick', sans-serif;
+	font-family: 'Akaya Kanadaka', cursive;
+}*/
+
+/*body{
+	font-family: 'Stick', sans-serif;
+}*/
+
+/*ii.Project folder Intergrate*/
+
+@font-face{
+	font-family: 'Stick';
+	src:local('Stick-Regular'), url(../libs/fonts/stick/Stick-Regular.ttf);
+}
+
+@font-face{
+	font-family: abc;
+	src: local(AkayaTelivigala-Regular),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf) format('woff');
+}
+
+.p1{
+	font-family: Stick;
+
+}
+
+.p2{
+	font-family: abc;
+}
+
+/*body{
+	font-family: abc;
+}*/
+
+.p3{
+
+	font-family: Century;
+	/*font-family: Arial,Century;*/
+
+	/*font-weight: bold;*/
+				/*100 to 900*/
+	/*font-weight: 900;*/
+
+	/*font-style: italic;*/
+
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+
+	/*text-transform: capitalize;*/
+
+	/*font-variant: small-caps;*/
+
+	/*Text Indentation*/
+	text-indent:50px;
+}
+
+.a1{
+	text-decoration: none;
+	/*color: red;*/
+}
+
+.a1:visited{
+	color: green;
+}
+
+.a1:hover{
+	color: blue;
+	font-size: 20px;
+}
+
+.menutext{
+
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: green;
+	color: #fff;
+
+	/*padding: 10px;*/
+
+			/*top&bottom left&right clockdir*/
+	/*padding: 10px 30px;*/
+
+				/*shot-hand writing*/
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 30px;
+
+	/*transition: background-color 1s,color 2s;*/
+				/*real world use*/
+	transition: all 1s;
+
+}
+
+.menutext:hover{
+
+	background-color: orange;
+	color: #000;
+}
+/*14FS*/ 
+
+.imgdesign{
+
+	width:80px;
+	height:80px;
+
+	transition: all 1s;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}
+

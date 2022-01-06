@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap'); */
+
+/*Local Matchine Integrate*/
+/* .p1{
+    font-family: "Times New Roman";
+
+    font-family: Arial,Century,"Times New Roman";
+} */
+/* body{
+    font-family: Arial,Century,"Times New Roman";
+} */
+
+/*Global Font Integrate*/
+/* .p1{
+    font-family: 'Stick', sans-serif;
+} */
+
+/* .p2{
+    font-family: 'Akaya Kanadaka', cursive;
+} */
+
+/* body{
+    font-family: 'Stick', sans-serif;
+} */
+
+/* ii.Porject Folder Integrate */
+@font-face{
+    font-family: 'Stick';
+    src:local(Stick-Regular
+    ),url(../libs/fonts/stick/Stick-Regular.ttf);
+}
+
+@font-face {
+    font-family: abc;
+    src: local(AkayaTelivigala-Regular),url('../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf') format('woff');
+}
+/* .p2{
+    font-family: abc;
+}
+.p1{
+    font-family: Stick;
+} */
+
+/* body{
+    font-family: abc;
+} */
+
+.p3{
+    font-family: Arial,Century;
+
+    /* font-weight: bold; */
+
+            /* 100 to 900 */
+    /* font-weight: 900; */
+
+    /* font-style: italic; */
+
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+
+    /* font-variant: small-caps; */
+
+    /* Text Indentation */
+    text-indent: 50px;
+}
+.a1{
+    text-decoration: none;
+    /* color:red; */
+}
+.a1:visited{
+    color: green;
+}
+.a1:hover{
+    color: blue;
+    font-size: 20px;
+}
+.menutext{
+    font-family: Cambria;
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    /* padding: 10px; */
+
+   /* top&bottom left&right */
+    /* padding: 10px 30px; */
+
+    /* padding: 10px 20px 30px 40px; */
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 10px;
+
+    /* transition: background-color 1s,color 2s; */
+    transition: all 1s;
+}
+.menutext:hover{
+    background-color: orange;
+    color: #000;
+}

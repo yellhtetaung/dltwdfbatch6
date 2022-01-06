@@ -1,0 +1,21 @@
+.textalign{
+	/*text-align:right;*/
+	/*text-align:center;*/
+	/*text-align:left;*/
+	text-align:justify;
+}
+.textdecoration{
+	/*text-decoration:underline;*/
+	/*text-decoration:line-through;*/
+	text-decoration:overline;
+}
+.textline{
+	/*letter-spacing:5px;*/
+	/*line-height:50px;*/
+	/*line-height:3;*/
+	line-height:300%;
+}
+.textshadow{
+			     /* hoz vel bul col */
+	text-shadow:10px -5px 5px #10ad2a;
+}

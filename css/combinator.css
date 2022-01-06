@@ -1,0 +1,110 @@
+/*Tag to Tag*/
+
+/*div span{
+	color: red;
+}*/
+
+
+
+/*Multi Tags to Tag*/
+
+/*div span p{
+	color:red;
+}*/
+
+
+
+/*Tag to Class*/
+/*div .address{
+	color: blue;
+}*/
+
+
+
+/*Multi Tags to Class*/
+
+/*div span .name{
+	color: red;
+}*/
+
+
+
+/*Multi Tags to Same Class*/
+
+/*div span small.name{
+	color: red;
+}*/
+
+
+
+/*Multi Class to Class*/
+/*.bank .money .currency{
+	color: red;
+}*/
+
+
+/*Tag to Multi Class*/
+/*div .name .age{
+	color: red;
+}*/
+
+/*Class to Tag*/
+/*.container b{
+	color:red;
+}*/
+
+/*Class to Multi tags*/
+
+/*.container b span{
+	color: red;
+}*/
+
+/*Same Class*/
+
+/*.mobile.jpn{
+	color: red;
+}
+
+.mobile.cn{
+	color: green;
+}
+
+.mobile.us{
+	color: blue;
+}*/
+
+/* Class to Same Class */
+
+/* .vehicle .car.jpn{
+	color: green;
+}
+.vehicle .car.cn{
+	color: blue;
+}
+.vehicle .car.indo{
+	color: red;
+} */
+
+/* Class to Tag by group selector */
+
+/* .div1 p,.div1 b{
+	color: blue;
+} */
+
+/* Child Selector */
+
+.div2 > p{
+	color: red;
+}
+
+/* Sibling Selector (2typea) */
+/* (i) General Sibling Selector */
+
+
+
+
+
+
+
+
+/* (ii) Adjecent Sibling Selector */

@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title>Form Elements</title>
+	</head>
+	<body>
+		<h1>Form Tag</h1>
+
+		<fieldset>
+			<legend>This is simple &copy;</legend>
+
+		<form action="" method="" enctype="multipart/form-data">
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstname" class="" placeholder="Enter Your Firt Name" maxlength="6" autocomplete="off" autofocus/>
+
+			<br/>
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastname" class="" placeholder="Enter Your Last Name" maxlength="6" autocomplete="off"/>
+
+			<br/>
+
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" class="" placeholder="Enter Your Password" minlength="4" maxlength="8" required readonly/>
+
+			<br/>
+			
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" class="" placeholder="Enter Your Age" min="0" max="99"/>
+
+			<br/>
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" class="" placeholder="Enter Your Email" autocomplete="off" required/>
+
+			<br/>
+
+			<label>Gender</label>
+			<input type="radio" name="gender" id="genderm" class="" value="1" checked/><label for="genderm">Male</label>
+			<input type="radio" name="gender" id="genderf" class="" value="0"/><label for="genderf">Female</label>
+			<input type="radio" name="gender" id="gendero" class="" value="2"/><label for="gendero">Other</label>
+
+			<br/>
+		
+			<label>Salary</label>
+			<input type="radio" name="salary" id="salaryc" class="" value="1" checked/><label for="salaryc">Cash</label>
+			<input type="radio" name="salary" id="salarym" class="" value="1"/><label for="salarym">Mobile Banking</label>
+
+			<br/>
+
+			<label>Choose Your Fav color</label>
+			<input type="checkbox" name="color" id="colorred" class="" value="1" checked/><label for="colorred">Red</label>
+			<input type="checkbox" name="color" id="colorblack" class="" value="2" checked/><label for="colorblack">Black</label>
+			<input type="checkbox" name="color" id="colorblue" class="" value="3"/><label for="colorblue">Blue</label>
+			<input type="checkbox" name="color" id="colorgreen" class="" value="4"/><label for="colorgreen">Green</label>
+
+			<br/>
+
+			<label for="country">Citizen</label>
+			<select name="country" id="country" class="">
+				<option selected disabled>Choose Your Country</option>
+				<option value="mm">myanmar</option>
+				<option value="th">Thailand</option>
+				<option value="slk">Sriland</option>
+				<option value="indo">Indonesia</option>
+				<option value="laos">Laos</option>
+			</select>
+
+			<br/>
+
+			<label for="role">Role</label>
+			<select name="role" id="role" class="" multiple>
+				<option value="1">Manager</option>
+				<option value="2">Editor</option>
+				<option value="3">Supervisor</option>
+				<option value="4">Sales</option>
+			</select>
+
+			<br/>
+
+			<label for="dob">DOB</label>
+			<input type="date" name="dob" id="dob" class=""/>
+
+			<br/>
+
+			<label for="bt">Booking Time</label>
+			<input type="time" name="bt" id="bt" class=""/>
+
+			<br/>
+
+			<label for="datetime">Date Time</label>
+			<input type="datetime-local" name="datetime" id="datetime" class=""/>
+
+			<br/>
+
+			<label for="volume">Volume</label>
+			<input type="range" name="volume" id="volurme" class="" min="0" max="100" value="0" step="10"/>
+
+			<br/>
+
+			<label for="bio">Bio</label>
+			<textarea name="bio" id="bio" class="" rows="5" placeholder="Write Something..."></textarea>
+
+			<br/>
+
+			<label for="nrc">NRC</label>
+			<input type="file" name="nrc" id="nrc" class="" multiple/>
+
+			<br/>
+			
+			<input type="hidden" name="test" id="test" class=""/>
+
+			<br/><br/>
+
+			<input type="reset" name="reset" id="reset" class="" value="Cannel"/>
+			<input type="submit" name="submit" id="submit" class="" value="Register">
+			<button type="submit" name="submit" id="submit" class="">Login</button>
+		</form>
+		</fieldset>
+
+	</body>
+</html>

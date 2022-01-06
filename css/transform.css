@@ -1,0 +1,101 @@
+:root{
+    --oc: orange;
+    --gn: #10a15b;
+    --vi: rgba(191,55,127,1.0);
+}
+.div1{
+    width: 100px;
+    height: 80px;
+    background-color: var(--gn);
+
+    transform: rotate(45deg);
+}
+.div2{
+    width: 200px;
+    height: 80px;
+    background-color: var(--oc);
+
+    transform: rotate(-45deg);
+}
+.div3{
+    width: 200px;
+    height: 80px;
+    background-color: var(--vi);
+
+    transform: rotateX(50deg);
+}
+.div4{
+    width: 200px;
+    height: 80px;
+    background-color: var(--gn);
+
+    transform: rotateY(50deg);
+}
+.div5{
+    width: 200px;
+    height: 80px;
+    background-color: var(--vi);
+
+            /* default scale(1) */
+    transform: scale(0.5);
+}
+.div6{
+    width: 200px;
+    height: 80px;
+    background-color: var(--oc);
+
+    /* transform: skew(50deg); */
+    transform: skew(-50deg);
+}
+.div7{
+    width: 200px;
+    height: 80px;
+    background-color: var(--gn);
+
+                /* default X */
+                /* current position */
+    /* transform: translate(50%); */
+    /* transform: translate(-50%); */
+    /* transform: translate(100%); */
+    /* transform: translate(-100%); */
+
+    /* transform: translate(200px); */
+    /* transform: translate(-100px); */
+
+    /* transform: translateX(100%); */
+    /* transform: translateX(-100%); */
+
+    /* transform: translateY(100%); */
+    /* transform: translateY(-100%); */
+}
+.country{
+    font-size: 16px;
+
+    /* Vendors Prifix Properties */
+    -webkit-appearance: none; /*Chrome Safri Opera -o-, Internet Explorer -ms-*/
+    -moz-appearance: none; /* Mozila firefox */
+    appearance: none;
+
+    padding: 10px 25px 10px 10px;
+    background-image: url('../img/downarrow.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 90%;
+}
+h1{
+    text-align: center;
+}
+p.text{
+    text-align: center;
+    color: red;
+}
+@media(max-width:600px){
+    h1{
+        font-size: 25px;
+        color: blue;
+    }
+    p.text{
+        color: green;
+    }
+}

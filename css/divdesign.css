@@ -1,0 +1,109 @@
+.firstdiv{
+	width:200px;
+	height:100px;
+	/* background-color:green; */
+	/* background-color:#cc820c; */
+	/* background-color:rgba(59,226,127,1.00); */
+
+	/* background:green; */
+	/* background:#cc820c; */
+	background:rgba(59,226,127,1.00);
+
+
+	color:blue;
+	font-size:20px;
+}
+.seconddiv{
+	width:300px;
+	height:300px;
+	/* background-image:url("../img/cover/bg1.jpg"); */
+	background:url("../img/cover/bg1.jpg");
+
+	/* background-repeat:no-repeat; */
+	/* background-repeat:repeat; */
+	background-repeat:repeat-x;
+	/* background-repeat:repeat-y; */
+
+	background-position:center;
+
+	/* border:2px;
+	border-style:solid;
+	border-color:red; */
+
+	/* Short Hand */
+		/* s 	s 		c */
+	border:5px solid green;
+
+
+
+	color:white;
+}
+.divthree{
+	width:300px;
+	height:300px;
+	/* border:3px solid red; */
+
+	color:white;
+
+	/* background:linear-gradient(red,orange,blue); */
+	/* background-image:linear-gradient(red,orange,blue); */
+	/* background:linear-gradient(#db3e1a,#1c7c80,#82144b); */
+	/* background:linear-gradient(rgba(229,23,127,1.00),rgba(42,205,127,1.00)); */
+
+	/* background:linear-gradient(
+		80deg,
+		red,
+		orange,
+		green
+	); */
+
+	/* background:radial-gradient(blue,red,orange) */
+	/* background:radial-gradient(#148219,#22187d) */
+	/* background:radial-gradient(
+		rgba(164,57,127,1.00),
+		rgba(74,198,127,1.00),
+		rgba(72,55,127,1.00)
+		); */
+
+
+	/* background:radial-gradient(
+		rgba(198,45,127,0.5),
+		rgba(44,212,127,1)
+	),url("../img/cover/bg2.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover; */
+
+	/* background:linear-gradient(
+		red 70%,
+		orange 30%
+	); */
+
+	background:linear-gradient(
+		45deg,
+		red 30%,
+		orange 0% 70%,
+		blue 0%
+	);
+}
+.divfour{
+	width:200px;
+	height:300px;
+
+	color:white;
+
+	background:linear-gradient(45deg,
+		rgba(198,45,127,0.5),
+		rgba(44,212,127,1)),
+		url("../img/cover/bg2.jpg");
+	background-repeat:no-repeat;
+}
+
+/* function
+name(parameter) */
+
+/* single parameter function
+name(parameter)
+
+multi parameter function
+name(parameter,paramter) */

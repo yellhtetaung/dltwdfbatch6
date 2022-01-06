@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js Array</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let y = ["hello",1500,true,undefined,null,new Date(),{firstname:"kyaw kyaw",lastname:"aung aung"}];
+
+            console.log(y);
+            console.table(y);
+
+            console.log(y[2]);
+            console.log(y[5]);
+            console.log(y[6]);
+            console.log(y[6].firstname);
+            console.log(y[6].lastname);
+
+
+            let z = [1000,1100,1200,1300,1400];
+            console.log(z);
+            console.log(z[3]);
+            console.log(z.indexOf(1100)); // result = 1
+            console.log(z.indexOf(5000)); // result = -1 မရှိတဲ့ value တွေဆိုရင် - နဲ့ထွက်မယ်
+            
+            // String is Character Array in js
+            let myfirend = "Aung Ko Ko";
+            console.log(myfirend);
+            console.log(typeof myfirend);
+            console.log(myfirend.length);
+            console.log(myfirend[0]);
+            console.log(myfirend[5]);
+
+            let m = [];
+
+            m[3] = "orange";
+            m[0] = "red";
+            m[1] = "green";
+            m[2] = "black";
+            m[4] = "violet";
+            m[7] = "blue";
+
+            console.log(m);
+            console.log(m.length);
+            console.log(m[1]);
+            console.log(m[4]);
+            console.log(m[5]); //undefined
+            console.log(m[6]); //undefined
+
+            
+            
+        </script>
+    </body>
+</html>

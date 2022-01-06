@@ -1,0 +1,51 @@
+:root{
+    --rc: red;
+    --sil: rgba(83,26,127,0.13);
+    --gn: #24c74f;
+    --oc: orange;
+}
+
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: var(--oc);
+
+    float: left;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: var(--rc);
+
+    float: left;
+}
+.div3{
+    width: 300px;
+    height: 300px;
+    background-color: var(--gn);
+
+    float: left;
+}
+.div4{
+    width: 400px;
+    height: 400px;
+    background-color: var(--sil);
+
+    float: left;
+}
+.div5{
+    width: 500px;
+    height: 500px;
+    background-color: var(--rc);
+
+    float: left;
+}
+
+
+
+/* Variable
+
+:root{
+    --sayar:"Tin Htut Aung"; custom property
+} */

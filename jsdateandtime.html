@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date and Time</title>
+    </head>
+    <body>
+
+        <small>Copyright © <span id="autoyear"></span> Eleven Media Group Co., Ltd. All rights reserved.</small>
+
+        <hr/>
+
+        <script type="text/javascript">
+
+            let date = new Date();
+            console.log(date);            
+
+            let getdate = date.getDate();
+            document.write("this is today date = "+ getdate +"<br/>");
+
+            // 24 format
+            let hour = date.getHours();
+            document.write("this is hours = "+ hour +"<br/>");
+
+            let minute = date.getMinutes();
+            document.write("this is minutes = "+ minute +"<br/>");
+
+            let second = date.getSeconds();
+            document.write("this is seconds = "+ second +"<br/>");
+
+            // 1s = 1000ms
+            // 1 jan 1970 > upnow milli seconds
+            let time = date.getTime();
+            document.write("this is time = "+ time +"<br/>");
+            let now = Date.now();
+            // console.log(now);
+
+            // return index number January is 0 / December 11
+            let month = date.getMonth();
+            document.write("this is month = "+ month +"<br/>");
+
+            // return index number Sunday is 0 / Saturday 6
+            let day = date.getDay();
+            document.write("this is day = "+ day +"<br/>");
+
+            let year = date.getFullYear();
+            document.write("this is year = "+ year +"<br/>");
+
+            let utcyear = date.getUTCFullYear();
+            document.write("this is utcyear = "+ utcyear +"<br/>");
+
+            document.getElementById("autoyear").textContent=date.getFullYear();
+
+            // m d y hr:mm:ss usformat
+            let birthday = new Date('8-10-2003');
+                birthday = new Date('9/10/2003');
+                birthday = new Date('Aug 10 2003');
+                birthday = new Date('8-10-2003 11:25:00');
+                birthday = new Date('August-10-2003 12:00:05');
+            console.log(birthday);
+
+        </script>
+    </body>
+</html>
+
+<!-- class Date(){
+    function getDate(){
+
+    }
+}
+new Date() -->

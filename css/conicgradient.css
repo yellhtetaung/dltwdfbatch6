@@ -1,0 +1,134 @@
+.container .circle1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        yellow,
+        red,
+        green,
+        pink
+    );
+}
+.container .circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #32a850,
+        #2712e3,
+        #c4e312,
+        #e31912
+    );
+}
+.container .circle3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        rgba(32,29,127,1.00),
+        rgba(226,205,127,1.00),
+        rgba(30,223,127,1.00),
+        rgba(115,114,127,1.00)
+    );
+}
+.container .circle4{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 40%,
+        yellow 0% 70%,
+        blue 0%
+    );
+}
+.container .circle5{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 15%,
+        yellow 0% 30%,
+        blue 0% 75%,
+        gray 0%
+    );
+}
+
+
+.containertwo{
+    width: 600px;
+    height: 300px;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    position: relative;
+}
+.containertwo .c1{
+    width: 300px;
+    height: 300px;
+    background: #000;
+    border-radius: 50%;
+
+    z-index: 2;
+
+    position: absolute;
+}
+.containertwo .c2{
+    width: 320px;
+    height: 320px;
+    /* background: linear-gradient(red,orange); */
+    background: conic-gradient(
+        red 0,
+        violet 30%,
+        red 0,
+        blue 70%,
+        red 0,
+        yellow 100%
+    );
+    border-radius: 50%;
+
+    position: absolute; 
+}
+.pointer-container{
+    width: 20px;
+    height: 200px;
+    /* background-color: gray; */
+
+    position: absolute;
+    top: -40px;
+
+    z-index: 4;
+
+    transform-origin: bottom center;
+
+    animation-name: myani;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    /*refresh မလုပ်ပဲ အကြိမ်ကြိမ်အခါခါလည်စေချင်ရင် သုံးတယ်*/
+    animation-timing-function: linear;
+    /*အချိန်ကို အညီအမျှခွဲပြီး အလုပ်လုပ်ချင်ရင် သုံးတယ်*/
+}
+.pointer{
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    display: block;
+}
+p{
+    color: #fff;
+
+    z-index: 4;
+}
+@keyframes myani{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
