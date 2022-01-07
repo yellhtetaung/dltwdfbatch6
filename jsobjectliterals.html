@@ -42,7 +42,27 @@
             console.log(person.address);
             console.log(person.address.street);
             console.log(person.address.city);
-            console.log(person.country.capital)
+            console.log(person.country.capital);
+
+            var obj = {
+                fullname : "Aung Kyaw Kyaw",
+                married : false,
+                age : 30,
+                phone : "09123456",
+                address : {
+                    street : "60st",
+                    city : "Mandalay"
+                },
+                hobbies : ["sleep","eat","code","music","sport"]
+            };
+
+            console.log(obj);
+            console.log(obj.fullname);
+            console.log(obj.married);
+            console.log(obj.address.street);
+            console.log(obj.hobbies);
+            console.log(obj.hobbies[3]);
+
 
 
         </script>

@@ -79,6 +79,7 @@
             console.log(arr2.concat(arr1));
             console.log(arr2.concat(arr3));
 
+            // Array Sorting (sort() doesn't work in number)
             const arr4 = arr1.concat(arr2);
             console.log(arr4);
             console.log(arr4[3]);
@@ -86,7 +87,12 @@
             // Sort A to Z
             console.log(arr4.sort());
 
+            // Reverse index number last to first (sort() doesn't work in number)
             console.log(arr4.reverse());
+
+            const arr5 = [700,200,100,50,150,10,600];
+            console.log(arr5);
+            console.log(arr5.reverse());
 
 
 
