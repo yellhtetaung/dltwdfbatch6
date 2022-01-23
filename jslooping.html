@@ -20,10 +20,205 @@
             console.log(arr[1]);
 
             // 1. For loop
+
+                    // start    end     increment/decrement
             // for(statement1;statement2;statement3){
             //     code to executed;
             // }
 
+            let i = 0;
+
+            for(i; i < 10; i++){
+                console.log(i);
+            }
+
+            console.log("this is i value from outside = " + i);
+
+            // for(var j = 5; j < 10; j++){
+            //     console.log("j value is = " + j);
+            // }
+
+            // console.log(j);
+
+            // let name = "aung aung";
+            // name = "kyaw kyaw";
+            // let name = "tun tun";
+            // console.log(name);
+
+            // var name = "su su";
+            // name = "aye aye";
+            // var name = "chan chan";
+            // console.log(name);
+
+            // for(var j=0; j<=10; j++){
+            //     console.log(j);
+            // }
+
+            // console.log(j);
+
+            // for(let j=0; j<=10; j++){
+
+            //     if(j === 5){
+            //         console.log("5 is my fav number");
+            //     }
+
+            //     console.log(j);
+            // }
+
+            // for(var j = 0; j < 10; j++){
+            //     if(j === 2){
+            //         console.log(j + " is my fav number");
+            //         break;
+            //     }
+            //     console.log(j);
+            // }
+            // console.log("this is j value from outside = " + j);
+
+            // for(let j=0; j<10; j++){
+            //     if(j === 2){
+            //         console.log(j + " is my fav number");
+            //         continue;
+            //     }
+            //     console.log(j);
+            // }
+
+            // for(let j=0; j<10; j++){
+            //     if(j === 2){
+            //         console.log(j + " is my fav number");
+            //         continue
+            //     }
+
+            //     if(j === 5){
+            //         console.log(j + " is my fav number");
+            //         break;
+            //     }
+            //     console.log(j);
+            // }
+
+            for(var k=10; k>0; k--){
+                console.log(k);
+            }
+            console.log(k + " outside value");
+
+            document.write("<h3>For Loop</h3>");
+
+            let myarrs = ["red","green","black","orange","grey","blue"];
+            console.log(myarrs);
+
+            // for(let j=0; j<=5; j++){
+            //     // console.log(j);
+            //     console.log(myarrs[j]);
+            // }
+
+            for(let j=0; j<myarrs.length; j++){
+                // console.log(myarrs[j]);
+                // console.log(myarrs[j]);
+                document.write(myarrs[j]+"<br/>");
+            }
+
+            const peoples = [
+                {name: "Aung Aung", age: 20},
+                {name: "Su Su", age: 30},
+                {name: "Hla Hla", age: 40}
+            ]
+            for (let j=0; j<peoples.length; j++){
+                // console.log(j);
+                document.write(peoples[j].name + " \/ Age = " + peoples[j].age + "<br/>");
+            }
+
+            document.write("<hr/>");
+
+//__________________________________________________________________________
+
+            // 2. For In Loop
+            // for(key in mainObject){
+            //     code to executed;
+            // }
+
+            document.write("<h3>For In Loop</h3>");
+
+            let students = {
+                name: "Aung Aung",
+                city: "Mandalay",
+                parent: "U Ba"
+            }
+            console.log(students);
+
+            for(key in students){
+                // console.log(key);
+                // console.log(students);
+                // console.log(students);
+                // console.log(students[key]);
+
+                document.write(key + " = " + students[key] + "<br/>");
+            }
+
+            const ourteams = ["kyaw kyaw", "aung aung", "maung maung", "tun tun"];
+            // console.log(ourteams);
+            // console.log(ourteams[3]);
+
+            for (key in ourteams){
+                // console.log(key);
+                document.write("our team = " + ourteams[key] + "<br/>");
+            }
+
+            let hays = "Hay January";
+
+            for(idx in hays){
+                console.log(idx);
+                document.write(hays[idx] + "<br/>");
+            }
+
+            document.write("<hr/>");
+
+//__________________________________________________________________________
+
+            // 3. For Of Loop
+            // for(value of mainArray){
+                // code to executed;
+            // }
+
+            document.write("<h3>For Of Loop</h3>");
+
+            const members = ["su su","hla hla","aye aye","nu nu"];
+            // console.log(members);
+            // console.log(members[2]);
+
+            for(member of members){
+                // cosole.log(members);
+                document.write("Member = " + member + "<br/>");
+            }
+
+            let greeting = "Hello January";
+
+            for(value of greeting){
+                document.write(value + "<br/>");
+            }
+
+            document.write("<hr/>");
+//__________________________________________________________________________
+
+            //4. While Loop
+            // start 
+            // while(condition){
+            //     before inc / dec 
+            //     code to executed;
+            //     after inc / dec
+            // }
+
+            let b = 0;
+            while(b < 10){
+                b++
+                console.log("Number b value is = " + b);
+            }
+
+            console.log("Outside b value is = " + b);
         </script>
     </body>
 </html>
+
+<!--
+    <script></script> = global scope ထဲမှာ assign လုပ်ထားတဲ့ဟာကို ဘယ်နေရာမှာပဲ ဖြစ်ဖြစ်‌ခေါ်သုံးလို့ရတယ်။
+    for(){} = for scope ထဲမှာ assign လုပ်ထားတဲ့ဟာကို for scope ထဲမှာပဲ သုံးလို့ရတယ်။ var ရဲ့ အားသာချက်ကြောင့် global scope မှာ ပြန်ခေါ်သုံးလို့ရတယ်။ တစ်ခြား keyword နှစ်ခုကတော့ မရပါဘူး။
+    for in loop သည် array ပုံစံကို inherith လုပ်ထားတယ်။ console.log(obj[key])
+-->

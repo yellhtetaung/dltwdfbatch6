@@ -630,8 +630,8 @@ Comments
 Variable
 
 const (overwrite လုပ်လို့မရဘူး/value မပေးလို့မရဘူး)
-var
-let
+var (keyword ထပ်ခေါ်ပြီး assign လုပ်လို့ရတယ်)
+let	(reassign ပဲ လုပ်လို့ရတယ်။ keyword ထပ်ခေါ်ပြီး သုံးရင် error တက်မယ်။)
 
 We can use 
 letter,number,_,$.

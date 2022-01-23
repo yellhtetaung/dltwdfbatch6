@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            // Local Storage
+            // Create
+            // localStorage.setItem("name","aung aung");
+            // localStorage.setItem("age",27); // going to number
+            // localStorage.setItem("city","Yangon");
+
+            // Read
+            // let getname1 = localStorage.getItem("name");
+            // console.log(getname1);
+            // let getage1 = localStorage.getItem("age");
+            // console.log(getage1);
+            // console.log(typeof getage1);
+            // let getcity1 = localStorage.getItem("city");
+            // console.log(getcity1);
+
+            // Update
+            // Method 1
+            // localStorage.setItem("name","kyaw kyaw");
+            // Method 2
+            // localStorage.age = 30;
+
+            // Delete
+            // Method 1 (single)
+            // localStorage.removeItem("name");
+            // localStorage.removeItem("age");
+            // localStorage.removeItem("city");
+            // Method 2 
+            localStorage.clear();
+
+        // ______________________________________________
+
+            // Session Storage (Homework)
+            // sessionStorage.setItem();
+            sessionStorage.setItem("name","aung aung");
+            sessionStorage.setItem("age",27);
+            sessionStorage.setItem("city","Yangon");
+
+            // sessionStorage.getItem();
+            // let getname1 = sessionStorage.getItem("name");
+            // console.log(getname1);
+            // let getage1 = sessionStorage.getItem("age");
+            // console.log(getname1);
+            // let getcity1 = sessionStorage.getItem("city");
+            // console.log(getcity1);
+
+            // sessionStorage.removeItem();
+            // sessionStorage.removeItem("name");
+            // sessionStorage.removeItem("age");
+            // sessionStorage.removeItem("city");
+
+            // sessionStorage.clear();
+            sessionStorage.clear();
+
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 
+cookies         vs      local Storage       vs          session storage 
+4kb                     5mb to 10mb                     5mb
+sv/br                   br                              br
+manual                  manual                          tab close
+all tabs                all tabs                        private tab
+request                 no request                      no request
+-->

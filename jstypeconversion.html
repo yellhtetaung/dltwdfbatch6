@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type Conversion</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            let val;
+
+            // to string
+            val = "aung aung";
+
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // Number to string
+
+            val = 20;
+            val = "20";
+            val = '20';
+            val = `20`;
+
+            val = "20+20"; // result = 20+20
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            val1 = "20";
+            val2 = "20";
+            val = val1 + val2;
+            console.log(val);
+
+            val = String(20+20);
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // Bool to String
+            val = true;
+            val = String(val);
+
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // Date to String
+            val = new Date();
+            val = "new Date()"; // doesn't work
+            val = String(new Date()); // can work
+
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // Array to String
+            val = [1,2,3,4,5];
+            val = "[1,2,3,4,5]"; // result = [1,2,3,4,5]
+            val = String([1,2,3,4,5]); // result = 1,2,3,4,5
+
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // toString = ().toString();
+            val = (new Date()).toString();
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // String to number
+            // val = Number(prompt("Enter Number"));
+            // console.log(val);
+            // console.log(typeof val);
+            // console.log(val.length);
+
+        // ____________________________________________________________
+
+            val = "20";
+            // val = Number(val);
+            val = +val;
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            // val = +"aung aung"; // NaN = Not a Number
+            // val = Number("aung aung"); // NaN = Not a Number
+            // val = Number([1,2,3,4,5]); // NaN = Not a Number
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+            console.log(val.toFixed(2));
+
+            val = 123.45897;
+            console.log(val);
+            console.log(val.toFixed(2));
+
+            val = "50.897";
+            val = parseInt(val);
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+            console.log(val.toFixed(2));
+            
+            val = "50.897";
+            val = parseFloat(val);
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+            console.log(val.toFixed(2));
+
+            // Boolean to Number
+            val = true;
+            val = Number(val);
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+        // ____________________________________________________________
+
+            // To Array
+
+            val = "aung tun tun";
+            val = Array.from(val);
+            console.log(Array.isArray(val));
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+            val = Array.from(20);
+            val = Array.from(true);
+            val = {
+                music: "rock",
+                sport: "basketball"
+            };
+            val = Array.from(val);
+            console.log(val);
+            console.log(typeof val);
+            console.log(val.length);
+
+
+
+        </script>
+    </body>
+</html>
