@@ -95,10 +95,10 @@
             //     console.log(j);
             // }
 
-            for(var k=10; k>0; k--){
-                console.log(k);
-            }
-            console.log(k + " outside value");
+            // for(var k=10; k>0; k--){
+            //     console.log(k);
+            // }
+            // console.log(k + " outside value");
 
             document.write("<h3>For Loop</h3>");
 
@@ -213,6 +213,147 @@
             }
 
             console.log("Outside b value is = " + b);
+
+            let c = 0;
+            while(c < 10){
+                c++
+                console.log("Number c value is = " + c);
+            }
+            
+            console.log("Outside c value is = " + c);
+
+            document.write("<h3>While Loop</h3>");
+
+            let mycolors = ["red","green","black","grey","blue","pink"];
+            console.log(mycolors);
+
+            let k = 0;
+            while(k < mycolors.length){
+                // console.log(k);
+
+                document.write(mycolors[k]+"<br/>");
+                k++
+            }
+
+            let laptops = [
+                {
+                    cpu: "core i7",
+                    ram: "8gb",
+                    hdd: "1tb"
+                }
+            ];
+
+            // console.log(laptops[0].cpu);
+
+            let q = 0;
+            while(q < laptops.length){
+                // console.log(q);
+                document.write("cpu is = " + laptops[q].cpu + "<br/>" + "ram is = " + laptops[q].ram + "<br/>" + "hdd is = " + laptops[q].hdd + "<br/>");
+                q++
+            }
+
+            document.write("<hr/>")
+
+//__________________________________________________________________________
+
+            // 5. Do While Loop
+
+            // do{
+                // before print inc/dec
+                // code to be executed
+                // after print inc/dec
+            // }while(condition);
+
+            document.write("<h3>Do While Loop</h3>")
+
+            let m = 0;
+            do{
+                console.log("M result is = " + m);
+                m++;
+            }while(m < 10);
+
+            console.log("M outside value = " + m);
+
+            let n = 0;
+            do{
+                n++;
+                console.log("N result is = "+ n);
+            }while(n < 10);
+
+            console.log("N outsid value = " + n);
+
+            let colors = ["red","green","black","grey","blue","pink"];
+            // console.log(colors);
+
+            let l = 0;
+            do{
+                // console.log(l);
+                document.write(colors[l] + "<br/>");
+                l++;
+            }while(l < colors.length);
+
+            document.write("<hr/>");
+
+//__________________________________________________________________________
+
+            // 6. forEach
+
+            document.write("<h3>forEach Loop</h3>");
+
+            // mains.forEach(function(value,index,array){
+                // code to be executed
+            // });
+
+            // colors.forEach(function(color){
+            //     console.log(color);
+            // });
+
+            // colors.forEach(function(color,idx){
+            //     console.log("index key is = "+ idx + " Color is = " + color);
+            // });
+
+            // colors.forEach(function(color,idx,arr){
+            //     console.log("index key is = "+ idx + " Color is = " + color);
+            //     console.log(arr);
+            // });
+
+
+            let persons = ["aung aung","maung maung","kyaw kyaw","zaw zaw","maw maw"];
+
+            // Regular Function
+            persons.forEach(function(person){
+                document.write(person + "<br/>");
+            });
+
+            // Arrow Function
+            persons.forEach((person)=>{
+                document.write(person + "<br/>")
+            });
+
+            document.write("<hr/>")
+
+//__________________________________________________________________________
+
+            // 7. MAP
+
+            document.write("<h3>MAP</h3>");
+
+            const visitors = ["paing sis","m zaw zaw","june","htet aung kyaw"];
+
+            visitors.forEach(function(visitor){
+                // console.log(visitor);
+                console.log(`forEach result = Mr.${visitor}`);
+            });
+
+            visitors.map(function(visitor){
+                // console.log(visitor);
+                console.log(`map result = Mr.${visitor}`);
+            });
+
+            visitors.forEach(function(visitor){
+                return visitor;
+            });
+
         </script>
     </body>
 </html>
