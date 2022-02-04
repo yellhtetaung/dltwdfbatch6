@@ -193,13 +193,44 @@
 
             console.log(multifun2(10,20,30));
 
+// -------------------------------------------------------------------------
 
+            // 3. Constructor Function (String Structure)
 
+            const cunfunone = new Function("j","k","l","return j+k+l");
 
+            console.log(cunfunone(10,20));
+            console.log(cunfunone(10,20,30));
+            console.log(typeof cunfunone(10,20,30));
 
+            console.log(cunfunone("10","20","30"));
+            console.log(typeof cunfunone("10","20","30"));
 
+            console.log(cunfunone("aung aung","maung maung","kyaw kyaw"));
+            
+// -------------------------------------------------------------------------
 
+            // 4. Nameless Function (Anonymous Function);
 
+            let annfunone = function (name,color){
+                document.write(`My name is ${name}. I love ${color} color.`)
+            }
+
+            annfunone("aung aung","pink");
+
+// -------------------------------------------------------------------------
+
+            // 5. Seft Invoking Function()
+
+            (function abc(){
+                console.log("save Myanmar");
+            })();
+
+            (function(name){
+                console.log(`My name is ${name}`)
+            })('tun tun');
+
+// -------------------------------------------------------------------------
 
 
 
