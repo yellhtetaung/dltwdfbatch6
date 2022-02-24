@@ -685,5 +685,12 @@ js မှာ Day and date ခေါ်ချင်ရင် class method သု�
 
 new Date(); ကို သုံးတယ်။
 
+=> Data Type 
+
+string  ("" '' ``)
+number  (25)
+boolean (ture/false)
+undefined
+
 console.warn();
 console.error();

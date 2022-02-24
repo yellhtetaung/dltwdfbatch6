@@ -17,8 +17,6 @@
             console.log(val.length);
 
             // Number to string
-
-            val = 20;
             val = "20";
             val = '20';
             val = `20`;
@@ -38,28 +36,24 @@
             console.log(typeof val);
             console.log(val.length);
 
-            // Bool to String
+            // Boolean to string
             val = true;
             val = String(val);
-
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
 
             // Date to String
             val = new Date();
-            val = "new Date()"; // doesn't work
-            val = String(new Date()); // can work
-
+            val = String(new Date());
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
 
             // Array to String
-            val = [1,2,3,4,5];
+
             val = "[1,2,3,4,5]"; // result = [1,2,3,4,5]
             val = String([1,2,3,4,5]); // result = 1,2,3,4,5
-
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
@@ -69,25 +63,22 @@
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
+//_______________________________________________________________________
 
-            // String to number
+            // String to Number
             // val = Number(prompt("Enter Number"));
             // console.log(val);
             // console.log(typeof val);
             // console.log(val.length);
 
-        // ____________________________________________________________
-
             val = "20";
             // val = Number(val);
             val = +val;
-            console.log(val);
-            console.log(typeof val);
-            console.log(val.length);
 
             // val = +"aung aung"; // NaN = Not a Number
             // val = Number("aung aung"); // NaN = Not a Number
             // val = Number([1,2,3,4,5]); // NaN = Not a Number
+
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
@@ -103,7 +94,7 @@
             console.log(typeof val);
             console.log(val.length);
             console.log(val.toFixed(2));
-            
+
             val = "50.897";
             val = parseFloat(val);
             console.log(val);
@@ -112,13 +103,13 @@
             console.log(val.toFixed(2));
 
             // Boolean to Number
+
             val = true;
             val = Number(val);
             console.log(val);
             console.log(typeof val);
             console.log(val.length);
-
-        // ____________________________________________________________
+//_______________________________________________________________________
 
             // To Array
 
@@ -129,6 +120,7 @@
             console.log(typeof val);
             console.log(val.length);
 
+            // can't convert to array
             val = Array.from(20);
             val = Array.from(true);
             val = {

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>String Method</title>
-        <style type="text/css">
-            /* #mm{
-                color: red;
-                font-size: 50px;
-            }
-            #th{
-                font-family: Arial;
-                color: blue;
-            } */
-        </style>
+        <title>JS String Methods</title>
     </head>
+    <style type="text/css">
+        /* #mm{
+            color: red;
+            font-size: 50px;
+        }
+        #th{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        } */
+    </style>
     <body>
 
         <div>
@@ -21,21 +21,21 @@
         </div>
 
         <script type="text/javascript">
+            
+            // String Methods
 
-            // String Method
             let val = "Maung Maung ";
-            let vl = "Kyaw"
+            let vl  = "Kyaw";
             console.log(val.length);
 
-            let name = val + vl;
-            console.log(name);
+            let nm = val + vl;
+            console.log(nm);
 
             // Append
             val += vl;
             console.log(val);
 
             // concat();
-            
             var firstname = "Zayar ";
             var lastname = "Kyaw";
             var fullname = firstname.concat(lastname);
@@ -45,12 +45,14 @@
             console.log(fullname[6]);
             console.log(fullname[fullname.length-1]);
 
+            // charAt()
             console.log(fullname.charAt(2));
             console.log(fullname.charAt(fullname.length-1));
 
+            // includes()
             let fav = "My fav color is black color";
             console.log(fav);
-            // result = ture
+            // result = true
             console.log(fav.includes("black"));
             // result = false
             console.log(fav.includes("red"));
@@ -58,7 +60,7 @@
             console.log(fav.includes("BLACK"));
             // result = false
             console.log(fav.includes("Black"));
-            // result =  ture
+            // result = ture
             console.log(fav.includes("bla"));
 
             // replace(old,new);
@@ -66,21 +68,20 @@
             console.log(fav.replace("bla","red"));
             console.log(fav.replace("color","parpar"));
 
-            // substring(index,lenght);
-            console.log(fav.substring(0,10)+"...")
-            console.log(fav.substring(0,10).concat("..."));
+            // substring(index,length);
+            console.log(fav.substring(0,20)+ "...");
+            console.log(fav.substring(0,20).concat("..."));
 
             // Change Case
             console.log(fav.toUpperCase());
             console.log(fav.toLowerCase());
 
             // Style
-            
             let abc = document.getElementById("mm");
-            document.getElementById("mm").style.color = "green";
+            document.getElementById("mm").style.color = "red";
             document.getElementById("mm").style.fontSize = "50px";
             console.log(abc);
-
+            
             document.getElementById("th").style.color = "blue";
             document.getElementById("th").style.fontFamily = "Arial";
             document.getElementById("th").style.display = "none";

@@ -5,23 +5,25 @@
     </head>
     <body>
         <script type="text/javascript">
-            
-            const name ={
-                firstname : "aung aung",
-                lastname : "kyaw"
+
+            const name = {
+                firstname: "aung aung",
+                lastname: "kyaw"
             };
+
             console.log(name.firstname,name.lastname);
 
-            const person = {
-                person1 : "aung aung",
-                person2 : "kyaw kyaw",
-                person3 : "zaw zaw"
-            }
-            console.log(person.person2,person.person3);
-            console.log(person);
-            console.table(person);
+            const persons = {
+                person1: "aung aung",
+                person2: "kyaw kyaw",
+                person3: "zaw zaw"
+            };
 
-            // Manual array (array start from index number 0)
+            console.log(persons.person2,persons.person3);
+            console.log(persons);
+            console.table(persons);
+
+            // Manual Array (array start from index number 0)
 
             let arrgirls = new Array("su su","lu lu","hla hla");
             console.log(arrgirls);
@@ -29,8 +31,8 @@
 
             console.log(arrgirls[1]);
             console.log(arrgirls[2]);
-            console.log(arrgirls[3]); // undefined
-            
+            console.log(arrgirls[3]);  // undefined
+
             let arrboys = ["mg mg","naung naung","nyaung nyaung","kyaw gyi"];
             console.log(arrboys);
             console.log(arrboys.length);
@@ -43,30 +45,32 @@
             let x = [1200,1300,1400,1500,1600,1700,1800];
             console.log(x);
 
-            let y = ["hello",1500,true,undefined,null,new Date(),{firstname:"kyaw kyaw",lastname:"aung"}];
+            let y = ["hello",1500,true,undefined,null,new Date(),{firstname: "kyaw kyaw",lastname: "aung"}];
+
             console.log(y);
             console.table(y);
 
             console.log(y[2]);
             console.log(y[5]);
-            console.log(y[6]);
             console.log(y[6].firstname);
             console.log(y[6].lastname);
 
             let z = [1000,1100,1200,1300,1400];
             console.log(z);
             console.log(z[3]);
-            console.log(z.indexOf(1100)); // result = 1
-            console.log(z.indexOf(1500)); // result = -1
+            console.log(z.indexOf(1100)); // result = 1 // value ပေးပြီး index number ကိုဖမ်းတာ
+            console.log(z.indexOf(1600)); // result = -1 // မရှိတဲ့ value တွေဆို -1 ပဲ ထွက်မယ်။
 
-            let myfriend = "Aung Ko Ko";
-            console.log(myfriend);
-            console.log(typeof myfriend);
-            console.log(myfriend.length);
-            console.log(myfriend[0]);
-            console.log(myfriend[5]);
+            // String is Character array in js
+            let myfirend = "Aung Ko Ko";
+            console.log(myfirend);
+            console.log(typeof myfirend);
+            console.log(myfirend.length);
+            console.log(myfirend[0]);
+            console.log(myfirend[5]);
 
             let m = [];
+
                 m[3] = "orange";
                 m[0] = "red";
                 m[1] = "green";
@@ -82,7 +86,14 @@
             console.log(m[6]); // result = undefined
 
             console.log(typeof m);
-            console.log(Array.isArray(m));
+
+            
+
+
+
+
+
+
 
         </script>
     </body>

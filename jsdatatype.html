@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Js Datatype</title>
+        <title>JS Datatype</title>
     </head>
     <body>
+        
         <script type="text/javascript">
-            
+
             // String
             const name = "Kyaw Kyaw";
             console.log(name);
             console.log(typeof name);
-            console.warn(typeof (name));
+            console.warn(typeof(name));
 
             // Number
-            const age = 25.23;
+            const age = 25;
             console.error(typeof age);
 
             // Boolean
@@ -37,32 +38,33 @@
             console.log(home);
             console.log(typeof home);
 
-            //Date (Object)
+            // Date(object)
             const date = new Date();
             console.log(date);
             console.log(typeof date);
 
             // Object
-            const address={
-                no : "No. 123",
-                street : "st 75x36",
-                city : "Mandalay",
-                zipcode : {
-                    countrycode : 95,
-                    areacode : 11131
+            const address = {
+                no: "No. 123",
+                street: "st 75x36",
+                city: "Mandalay",
+                zipcode: {
+                    countrycode: 95,
+                    areacode: 11131
                 }
             };
-
             console.log(address);
             console.log(typeof address);
             console.log(typeof address.city);
             console.log(typeof address.zipcode);
             console.log(typeof address.zipcode.areacode);
 
-            // Object (Array Object)
-            const hobbies = ["movies","music","sport"];
+            // Object(Array Object)
+            const hobbies = ["movie","music","sport"];
             console.log(hobbies);
             console.log(typeof hobbies);
+
+
 
 
         </script>
