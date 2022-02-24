@@ -2,11 +2,132 @@
 <html>
     <head>
         <title>Window Object</title>
+        <style type="text/css">
+            @media print{
+                *{
+                    visibility: hidden;
+                }
+                #printarea *{
+                    visibility: visible;
+                }
+            }
+            @page{
+                margin: 0;
+                /* size: portrait; */
+                /* size: landscape; */
+                size: auto;
+            }
+        </style>
     </head>
-    <body>
-        <script type="text/javascript">
+    <div>
+        <body>
 
-            
-        </script>
-    </body>
+            <button onclick="printme()">Print</button>
+            <button onclick="reloadme()">Refresh</button>
+
+            <hr />
+
+            <div id="printarea">
+                <div>
+                    <h1>This is Paragraph 1</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div>
+                    <h1>This is Paragraph 2</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h1>This is Paragraph 4</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <hr/>
+
+            <!-- <div style="margin-top: 1000px;">
+
+            </div> -->
+
+            <!-- <pre>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </pre> -->
+
+
+            <div>
+                <script type="text/javascript">
+
+
+
+                    // Window Object
+                    // Alert
+                    // window.alert('Hello World');
+
+                    // Prompt
+                    // let input = prompt("Write Something");
+                    // console.log(input);
+
+                    // Comfirm
+                    // if(confirm("Are you sure")){
+                    //     console.log("Yes, i want to delete");
+                    // }else{
+                    //     console.log("Ohh sory i don\'t")
+                    // }
+
+                    // Print
+                    // window.print();
+
+                    function printme() {
+                        window.print();
+                    }
+
+                    let val;
+
+                    val = window.outerWidth;
+                    console.log("this is outer width = ", val);
+                    val = window.outerHeight;
+                    console.log("this is outer height = ", val);
+
+                    val = window.innerWidth;
+                    console.log("this is innert width = ", val);
+                    val = window.innerHeight;
+                    console.log("this is inner Height = ", val);
+
+                    val = window.scrollY;
+                    console.log('Scroll Y value is = ' , val);
+                    val = window.scrollX;
+                    console.log('Scroll X value is = ' , val);
+
+                    // Redirect
+                    // console.log(window);
+                    // console.log(window.location);
+
+                    // window.location.href = "https://google.com";
+
+                    // Reload
+                    // window.location.reload();
+
+                    function reloadme(){
+                        // console.log("hey");
+                        window.location.reload();
+                    }
+
+                    // Navigator Object
+                    // console.log(window.navigator);
+                    document.write("navigation.userAgent result = ", window.navigator.userAgent + "<br/>");
+                    document.write("navigation.cookiEnable result = ", window.navigator.cookieEnabled + "<br/>");
+                    document.write("navigation.language result = ", window.navigator.language + "<br/>");
+                    document.write("navigation.onLine result = ", window.navigator.onLine + "<br/>");
+
+
+
+                </script>
+            </div>
+        </body>
+    </div>
 </html>
