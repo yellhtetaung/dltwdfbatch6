@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Listener</title>
+    </head>
+    <body>
+
+        <div>
+            <h3>Show Hide Button</h3>
+            <div id="paragraph">
+                <p id="p1">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <!-- <button type="button" id="hideme" class="" onclick="hideme()">Hide Me</button> -->
+            <button type="button" id="hideme" class="">Hide Me</button>
+
+            <hr/>
+
+            <div>
+                <p id="mm">We Love Myanmar</p>
+                <button type="button" id="red" class="">Red</button>
+                <button type="button" id="green" class="">Green</button>
+                <button type="button" id="blue" class="">Blue</button>
+                <button type="button" id="orange" class="">Orange</button>
+                <button type="button" id="bold" class="">Bold Text</button>
+                <button type="button" id="italic" class="">Italic Text</button>
+                <button type="button" id="underline" class="">Underline Text</button>
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <div>
+            <form action="" method="">
+                <label for="name">Name</label><br/>
+                <input type="text" name="name" id="name" class="" onchange="myfun()" autocomplete="off"/>
+                <br/><br/>
+
+                <label for="address">Address</label><br/>
+                <input type="text" name="address" id="address" class=""/>
+                <br/><br/>
+
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" class="" onchange="genderfun()">
+                    <option disabled selected>Choose Gender</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+
+                <br/><br/>
+
+                <label for="country">Country</label>
+                <select name="country" id="country" class="" onchange="countryfun()">
+                    <option disabled selected>Choose Country</option>
+                    <option value="mm">Myanmar</option>
+                    <option value="th">Thailand</option>
+                </select>
+
+                <br/><br/>
+
+                <div id="mmcity">
+                    <input type="radio" name="city" id="cityygn" class="" value="yangon"/><label for="cityygn">Yangon</label>
+                    <input type="radio" name="city" id="citymdy" class="" value="mandalay"/><label for="citymdy">Mandalay</label>
+                    <input type="radio" name="city" id="citybgo" class="" value="bago"/><label for="citybgo">Bago</label>
+                </div>
+                <div id="thcity">
+                    <input type="radio" name="city" id="citybkk" class="" value="bangkok"/><label for="citybkk">Bangkok</label>
+                    <input type="radio" name="city" id="citypkt" class="" value="phuket"/><label for="citypkt">Phuket</label>
+                    <input type="radio" name="city" id="citymst" class="" value="maesot"/><label for="citymst">Mae Sot</label>
+                </div>
+
+            </form>
+        </div>
+
+
+        <script type="text/javascript">
+
+            let pgh = document.getElementById("paragraph");
+            let hidemebtn = document.getElementById("hideme");
+
+            // function hideme(){
+            //     // console.log("hay");
+            //     // console.log(pgh);
+
+            //     // pgh.style.display = "none";
+            //     // hidemebtn.innerText = "Show Me";
+
+            //     if(pgh.style.display === "none"){
+            //         pgh.style.display = "block";
+            //         hidemebtn.innerHTML = "Hide Me";
+            //     }else{
+            //         pgh.style.display = "none";
+            //         hidemebtn.textContent = "Show Me";
+            //     }
+            // }
+
+            hidemebtn.addEventListener("click",function(){
+                if(pgh.style.display === "none"){
+                    pgh.style.display = "block";
+                    hidemebtn.innerHTML = "Hide Me";
+                }else{
+                    pgh.style.display = "none";
+                    hidemebtn.textContent = "Show Me";
+                }
+            });
+
+            document.getElementById("red").addEventListener("click", function(){
+                // console.log("hey");
+                document.getElementById("mm").style.color = "red";
+            });
+
+            document.getElementById("green").addEventListener("click", function(){
+                document.getElementById("mm").style.color = "green";
+            });
+
+            document.getElementById("blue").addEventListener("click", function(){
+                document.getElementById("mm").style.color = "blue";
+            });
+
+            document.getElementById("orange").addEventListener("click", function(){
+                document.getElementById("mm").style.color = "orange";
+            });
+
+            document.getElementById("bold").addEventListener("click", function(){
+                document.getElementById("mm").style.fontWeight = "bold";
+            });
+
+            document.getElementById("italic").addEventListener("click", function(){
+                document.getElementById("mm").style.fontStyle = "italic";
+            });
+
+            document.getElementById("underline").addEventListener("click", function(){
+                document.getElementById("mm").style.textDecoration = "underline";
+            });
+
+            // for name
+            function myfun(){
+                // console.log("thank for your typing");
+                let txtname = document.getElementById("name");
+                // console.log(txtname.value);
+
+                txtname.value = txtname.value.toUpperCase();
+            }
+            
+            // for gender
+            function genderfun(){
+                // console.log("hey i am working");
+                let gnd = document.getElementById("gender");
+                // console.log(gnd.value);
+                // console.log(typeof gnd.value);
+
+                switch(gnd.value){
+                    case "0":
+                        window.alert("Thanks Lady");
+                        break;
+                    case "1":
+                        window.alert("Thanks Thar Gyi");
+                        break;
+                }
+            }
+
+            // for country
+
+            document.getElementById("mmcity").style.display = "none";
+            document.getElementById("thcity").style.display = "none";
+            
+            function countryfun(){
+                // console.log("i am working");
+                let country = document.getElementById("country");
+                // console.log(country.value);
+
+                switch(country.value){
+                    case "mm":
+                        document.getElementById("mmcity").style.display = "block";
+                        document.getElementById("thcity").style.display = "none";
+                        break;
+                    case "th": 
+                        document.getElementById("thcity").style.display = "block";
+                        document.getElementById("mmcity").style.display = "none";
+                        break;
+                }
+            }
+
+        </script>
+    </body>
+</html>

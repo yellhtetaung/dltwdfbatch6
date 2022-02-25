@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window History</title>
+        <style type="text/css">
+            body{
+                display: flex;
+                justify-content: center;
+            }
+            nav{
+                margin-bottom: 50px;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+
+                padding: 0;
+                margin: 0;
+            }
+            ul li{
+                width: 200px;
+                background-color: green;
+                color: #fff;
+                text-align: center;
+
+                padding: 20px 0;
+
+                transition: all 0.2s;
+            }
+            ul li:hover{
+                background-color: orange;
+            }
+            a{
+                text-decoration: none;
+            }
+            .active{
+                background-color: orange;
+            }
+            .historybar{
+                background-color: silver;
+            }
+            .historybar span{
+                cursor: pointer;
+            }
+            div h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <a href="./jswindowhistory.html"><li>Home</li></a>
+                    <a href="./jswindowhistorynews.html"><li>News</li></a>
+                    <a href="./jswindowhistoryebook.html"><li>Ebook</li></a>
+                    <a href="./jswindowhistorymusic.html"><li>Music</li></a>
+                    <a href="./jswindowhistoryvideo.html"><li class="active">Video</li></a>
+                </ul>
+            </nav>
+
+            <div class="historybar">
+                <span onclick="gobackward()">Go Backward</span> / <a href="./jswindowhistory.html">Home</a> / <span onclick="goforward()">Go Forward</span>
+            </div>
+            <div>
+                <h1>I am Video Page Sir</h1>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            function gobackward(){
+                // console.log("backwark is working");
+                window.history.go(-1);
+                
+            }
+
+            function goforward(){
+                // console.log("forward is working");
+                window.history.go(1);
+            }
+            
+            // let val = window.history.length;
+            // console.log(val);
+            
+            
+
+        </script>
+
+    </body>
+</html>
