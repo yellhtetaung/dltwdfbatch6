@@ -14,7 +14,7 @@
                 <div class="card-content">
                     <h3 class="card-title">Todo List</h3>
                     
-                    <form id="task-form" class="form" action="" method="">
+                    <form id="task-form1" class="form" action="db.php" method="POST">
                         <div class="form-control">
                             <label for="task">Enter New Task</label>
                             <input type="text" name="task" id="task" class="task"/>
@@ -26,7 +26,7 @@
                     <h4>Tasks</h4>
 
                     <ul class="list-group">
-                        <li class="list-group-item">List Item 1 <a href="#" id="delete-item1" class="delete-item"><i class="fa-solid fa-trash-can"></i></a></li>
+                        <li class="list-group-item">List Item 1 <a href="#" id="delete-item1" class="delete-item delete-me"><i class="fa-solid fa-trash-can"></i></a></li>
                         <li class="list-group-item">List Item 2 <a href="#" id="delete-item2" class="delete-item"><i class="fa-solid fa-trash-can"></i></a></li>
                         <li class="list-group-item">List Item 3 <a href="#" id="delete-item3" class="delete-item"><i class="fa-solid fa-trash-can"></i></a></li>
                         <li class="list-group-item">List Item 4 <a href="#" id="delete-item4" class="delete-item"><i class="fa-solid fa-trash-can"></i></a></li>
@@ -34,7 +34,11 @@
                     </ul>
                     <button class="btn clear-tasks" >Clear Tasks</button>
                 </div>
+                <div class="moretasks">
+                    <img src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator.gif" class="loading" alt="loader" tag="kotha"/>
+                </div>
             </div>
+
 
         </div>
 
