@@ -75,7 +75,7 @@ body{
 
 .list-group .list-group-item{
 	display:flex;
-	justify-content:space-between; /*Bayy bal nyr kan chin yin use*/
+	justify-content:space-between;
 	line-height:30px;
 }
 

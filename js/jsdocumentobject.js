@@ -40,4 +40,41 @@ val = document.scripts[0].type;
 val = document.scripts[0].getAttribute('src');
 val = document.scripts[0].getAttribute('type');
 
-console.log(val);
+// console.log(val);
+
+// Change Styling
+document.getElementById("tasktitle").style.background = "grey";
+// document.getElementById("tasktitle").style.color = "#fff";
+document.getElementById("tasktitle").style.padding = "5px";
+
+// Change Content 
+// document.getElementById("tasktitle").textContent = "My List";
+// document.getElementById("tasktitle").innerText = "My Tasks";
+document.getElementById("tasktitle").innerHTML = `<span style="color:yellow">My Jobs</span>`;
+
+// Call to Class Name
+let lis = document.getElementsByClassName("list-group-item"); // HTMLCollection
+// console.log(lis);
+// console.log(lis[0]);
+// lis[0].style.color = "blue";
+// lis[1].textContent = "Have to visit";
+
+// Call to Tag
+let litags = document.getElementsByTagName('li'); // HTMLCollection
+// console.log(litags);
+// console.log(litags[0]);
+// litags[0].style.color = "red";
+// litags[1].innerText = "Have to cook";
+
+// querySelector (တစ်ခုပဲရှိတဲ့ကောင်တွေကို ခေါ်ချင်ရင် သုံးတယ်။ အများကြီးရှိတဲ့ကောင်ကိုခေါ်လည်း တစ်ခုပဲ ထွက်တယ်)
+console.log(document.querySelector("#tasktitle"));
+console.log(document.querySelector(".card-title"));
+console.log(document.querySelector("h3"));
+
+console.log(document.querySelector("li"));
+// document.querySelector("li").style.color = "red";
+// document.querySelector("ul li").style.color = "blue";
+// document.querySelector("ul li:nth-child(odd)").style.background = "silver";
+// document.querySelector("ul li:nth-child(even)").style.background = "grey";
+// document.querySelector("ul li:last-of-type").style.color = "green";
+// document.querySelector("ul li:nth-of-type(3)").textContent = "Have to Read";
