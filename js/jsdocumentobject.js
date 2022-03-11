@@ -67,14 +67,29 @@ let litags = document.getElementsByTagName('li'); // HTMLCollection
 // litags[1].innerText = "Have to cook";
 
 // querySelector (တစ်ခုပဲရှိတဲ့ကောင်တွေကို ခေါ်ချင်ရင် သုံးတယ်။ အများကြီးရှိတဲ့ကောင်ကိုခေါ်လည်း တစ်ခုပဲ ထွက်တယ်)
-console.log(document.querySelector("#tasktitle"));
-console.log(document.querySelector(".card-title"));
-console.log(document.querySelector("h3"));
+// console.log(document.querySelector("#tasktitle"));
+// console.log(document.querySelector(".card-title"));
+// console.log(document.querySelector("h3"));
 
-console.log(document.querySelector("li"));
+// console.log(document.querySelector("li"));
 // document.querySelector("li").style.color = "red";
 // document.querySelector("ul li").style.color = "blue";
 // document.querySelector("ul li:nth-child(odd)").style.background = "silver";
 // document.querySelector("ul li:nth-child(even)").style.background = "grey";
 // document.querySelector("ul li:last-of-type").style.color = "green";
 // document.querySelector("ul li:nth-of-type(3)").textContent = "Have to Read";
+
+const listitems = document.querySelector("ul").getElementsByClassName("list-group-item");
+console.log(listitems);
+
+// document.querySelector("ul li:nth-child(odd)").style.background = "silver";
+// document.querySelector("ul li:nth-of-type(even)").style.background = "grey";
+
+// console.log(typeof listitems);
+
+let arrayitems = Array.forms(listitems);
+console.log(arrayitems);
+
+// listitems.forEach(function(listitems,index){
+//     console.log(index);
+// });
