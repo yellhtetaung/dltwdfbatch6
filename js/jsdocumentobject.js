@@ -87,9 +87,57 @@ console.log(listitems);
 
 // console.log(typeof listitems);
 
-let arrayitems = Array.forms(listitems);
-console.log(arrayitems);
+// let arrayitems = Array.forms(listitems);
+// console.log(arrayitems);
 
 // listitems.forEach(function(listitems,index){
 //     console.log(index);
+
 // });
+
+// < စာလုပ်ရမယ် >
+
+// children
+
+let chl;
+
+const getul = document.querySelector("ul.list-group");
+console.log(getul);
+const getli = document.querySelector("li.list-group-item:first-child");
+// console.log(getli);
+
+chl = getul.children; // HTMLCollection
+console.log(chl);
+console.log(chl[0]);
+chl = getul.children[1];
+console.log(chl);
+
+// getul.children[1].innerText = "Have to eat";
+// getul.children[1].innerHTML = `Have to eat <a href="#" id="delete-item1" class="delete-item delete-me"><i class="fa-solid fa-trash-can"></i></a></li>`;
+
+// children of children
+chl = getul.children[1].children; // HTMLCollection
+chl = getul.children[1].children[0];
+chl = getul.children[1].children[0].id;
+chl = getul.children[1].children[0].className;
+chl = getul.children[1].children[0].classList; // DOM Token List
+chl = getul.children[1].children[0].getAttribute("href");
+
+chl = getul.children[0].children[0].children; // HTMLCollection
+chl = getul.children[0].children[0].children[0];
+
+// First Element Child
+chl = getul.firstElementChild;
+
+// Last Element Child
+chl = getul.lastElementChild;
+
+// Child Element Count
+chl = getul.children.length;
+chl = getul.childElementCount;
+
+chl = getul.children[0].childElementCount;
+chl = getul.children[0].children[0].childElementCount;
+
+
+console.log(chl);
