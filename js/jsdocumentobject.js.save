@@ -80,7 +80,7 @@ let litags = document.getElementsByTagName('li'); // HTMLCollection
 // document.querySelector("ul li:nth-of-type(3)").textContent = "Have to Read";
 
 const listitems = document.querySelector("ul").getElementsByClassName("list-group-item");
-console.log(listitems); // HTMLCollection
+console.log(listitems);
 
 // document.querySelector("ul li:nth-child(odd)").style.background = "silver";
 // document.querySelector("ul li:nth-of-type(even)").style.background = "grey";
@@ -97,80 +97,59 @@ arritems.forEach(function(arritem,index){
 
 });
 
-// querySelectorAll (Array နဲ့ရမယ်။ NodeList Array)
+// querySelectorAll
 
 let its = document.querySelector('ul.list-group li.list-group-item');
 console.log(its);
 
 let itms = document.querySelectorAll('ul.list-group li.list-group-item'); // NodeList
 console.log(itms);
-console.log(itms[0]);
-
-// itms.forEach(function(itm,index){
-//     // console.log(itm);
-//     // itm.textContent = "Hello";
-//     itm.innerText = `${index} : Hello World`;
-// })
-
-const liodd = document.querySelectorAll('li:nth-child(odd)');
-const lieven = document.querySelectorAll('li:nth-child(even)');
-// console.log(lieven);
-
-// liodd.forEach(function(li,index){
-//     // console.log(li);
-//     li.style.backgroundColor = "grey";
-// });
-
-// for(let i = 0; i < lieven.length; i++){
-//     // console.log(i);
-//     // console.log(lieven[i]);
-//     lieven[i].style.backgroundColor = "silver";
-// }
-
-// children
-
-let chl;
-
-const getul = document.querySelector("ul.list-group");
-console.log(getul);
-const getli = document.querySelector("li.list-group-item:first-child");
-// console.log(getli);
-
-chl = getul.children; // HTMLCollection
-console.log(chl);
-console.log(chl[0]);
-chl = getul.children[1];
-console.log(chl);
-
-// getul.children[1].innerText = "Have to eat";
-// getul.children[1].innerHTML = `Have to eat <a href="#" id="delete-item1" class="delete-item delete-me"><i class="fa-solid fa-trash-can"></i></a></li>`;
-
-// children of children
-chl = getul.children[1].children; // HTMLCollection
-chl = getul.children[1].children[0];
-chl = getul.children[1].children[0].id;
-chl = getul.children[1].children[0].className;
-chl = getul.children[1].children[0].classList; // DOM Token List
-chl = getul.children[1].children[0].getAttribute("href");
-
-chl = getul.children[0].children[0].children; // HTMLCollection
-chl = getul.children[0].children[0].children[0];
-
-// First Element Child
-chl = getul.firstElementChild;
-
-// Last Element Child
-chl = getul.lastElementChild;
-
-// Child Element Count
-chl = getul.children.length;
-chl = getul.childElementCount;
-
-chl = getul.children[0].childElementCount;
-chl = getul.children[0].children[0].childElementCount;
 
 
-console.log(chl);
+
+// // children
+
+// let chl;
+
+// const getul = document.querySelector("ul.list-group");
+// console.log(getul);
+// const getli = document.querySelector("li.list-group-item:first-child");
+// // console.log(getli);
+
+// chl = getul.children; // HTMLCollection
+// console.log(chl);
+// console.log(chl[0]);
+// chl = getul.children[1];
+// console.log(chl);
+
+// // getul.children[1].innerText = "Have to eat";
+// // getul.children[1].innerHTML = `Have to eat <a href="#" id="delete-item1" class="delete-item delete-me"><i class="fa-solid fa-trash-can"></i></a></li>`;
+
+// // children of children
+// chl = getul.children[1].children; // HTMLCollection
+// chl = getul.children[1].children[0];
+// chl = getul.children[1].children[0].id;
+// chl = getul.children[1].children[0].className;
+// chl = getul.children[1].children[0].classList; // DOM Token List
+// chl = getul.children[1].children[0].getAttribute("href");
+
+// chl = getul.children[0].children[0].children; // HTMLCollection
+// chl = getul.children[0].children[0].children[0];
+
+// // First Element Child
+// chl = getul.firstElementChild;
+
+// // Last Element Child
+// chl = getul.lastElementChild;
+
+// // Child Element Count
+// chl = getul.children.length;
+// chl = getul.childElementCount;
+
+// chl = getul.children[0].childElementCount;
+// chl = getul.children[0].children[0].childElementCount;
 
 
-// ClassName,TagName တွေကိုခေါ်မယ်ဆိုရင် HTML Collection နဲ့ထွက်မယ်။ HTML Collection နဲ့ထွက်ရင် တန်းပြီးတော့ Looping ပတ်လို့မရဘူး။ HTMLCollection ကို Array.from နဲ့ pure Array ပြောင်းပြီးမှ looping ပတ်လို့ရမယ်
+// console.log(chl);
+
+// ClassName,TagName 
