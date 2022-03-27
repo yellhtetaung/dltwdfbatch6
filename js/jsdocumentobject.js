@@ -50,7 +50,7 @@ document.getElementById("tasktitle").style.padding = "5px";
 // Change Content 
 // document.getElementById("tasktitle").textContent = "My List";
 // document.getElementById("tasktitle").innerText = "My Tasks";
-document.getElementById("tasktitle").innerHTML = `<span style="color:yellow">My Jobs</span>`;
+// document.getElementById("tasktitle").innerHTML = `<span style="color:yellow">My Jobs</span>`;
 
 // Call to Class Name
 let lis = document.getElementsByClassName("list-group-item"); // HTMLCollection
@@ -169,8 +169,151 @@ chl = getul.childElementCount;
 chl = getul.children[0].childElementCount;
 chl = getul.children[0].children[0].childElementCount;
 
+// console.log(chl);
 
-console.log(chl);
+// Parent Element
+
+const getfirstli = document.querySelector('li.list-group-item:first-child');
+
+let par = getfirstli.parentElement;
+// console.log(par);
+
+// Next Element Sibling
+        // list item 1 list item 2
+let sbl = getfirstli.nextElementSibling;
+
+    // list item 1  list item 2     list item 3         list item 4         list item 5      
+sbl = getfirstli.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+
+// console.log(sbl);
+
+// Previous Element Sibling
+        // list item 1  list item 2         list item 3     list item 2
+let psbl = getfirstli.nextElementSibling.nextElementSibling.previousElementSibling;
+console.log(psbl);
+
+// Create Element 
+const newli = document.createElement("li");
+
+// Add ID
+newli.id = "new-item";
+
+// Add Class
+newli.className = "list-group-item";
+
+// Add Attribute (qualifiedname, value)
+newli.setAttribute('title', 'newitem');
+
+// newli.textContent = "hey";
+// newli.innerText = "hi";
+// newli.innerHTML = `List Item 6 <a href="#" id="delete-item6" class="delete-item"><i class="fa-solid fa-trash-can"></i></a>`;
+
+// Create Text Node
+newli.appendChild(document.createTextNode("Save Myanmar"));
+
+const newlink = document.createElement('a');
+
+newlink.href = "#";
+
+// Add ID
+newlink.id = "delete-item6"
+
+// Add Class
+newlink.className = "delete-item";
+
+newlink.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+// console.log(newlink);
+
+newli.appendChild(newlink);
+
+// console.log(newli);
+
+document.querySelector('ul.list-group').appendChild(newli);
+
+// Replace Element
+
+const newtitle = document.createElement('h2');
+
+// Add ID
+newtitle.id = 'task-title';
+
+// Create Text Node
+newtitle.appendChild(document.createTextNode('All My Lists'));
+
+// console.log(newtitle);
+
+const oldtitle = document.getElementById('tasktitle');
+console.log(oldtitle);
+
+const getcardaction = document.querySelector('.card-action');
+
+// Replace Child(new,old)
+getcardaction.replaceChild(newtitle,oldtitle);
+
+// Remove Element (self)
+const getlis = document.querySelectorAll('li'); // NodeList
+// console.log(getlis);
+// console.log(getlis[0]);
+// getlis[0].remove();
+// getlis[4].remove();
+
+// Remove Child Element (child)
+const getfirstul = document.querySelector('ul');
+// console.log(getfirstul);
+// console.log(getlis[5]);
+
+// getfirstul.removeChild(getlis[0]);
+// getfirstul.removeChild(getlis[5]);
+
+// ClassName VS ClassList
+const firstli = document.querySelector('li:first-child');
+// console.log(firstli);
+// const firstlink = firstli.children; // HTMLCollection
+const firstlink = firstli.children[0];
+// console.log(firstlink);
+let firstlnk;
+firstlnk = firstlink.className;
+console.log(firstlnk);
+firstlnk = firstlink.classList; // DOM Token List
+console.log(firstlnk);
+console.log(firstlnk[0]);
+console.log(firstlnk[1]);
+
+// firstlink.className = "delete-myself";
+// firstlink.className = "delete-item delete-myself";
+// firstlink.className = "delete-item delete-me delete-myself";
+
+firstlnk = firstlink.classList; // DOM Token List
+// console.log(firstlnk);
+// console.log(firstlnk[0]);
+// console.log(firstlnk[1]);
+
+// firstlink.classList.add('delete-ourserve');
+// firstlink.classList.add('delete-myself');
+// firstlink.classList.add('delete-myself','delete-ourserve');
+// firstlink.classList.remove('delete-item');
+// firstlink.classList.remove('delete-me','delete-myself');
+// replace(old,new)
+// firstlink.classList.replace('delete-ourserve','delete-delete');
+
+// contains (checking include or none)
+
+// if(firstlink.classList.contains('delete-me')){
+// 	console.log("yes");
+// } else {
+// 	console.log('no');
+// }
+
+// Attribute
+let getatt = firstlink.getAttribute('href');
+// console.log(getatt);
+firstlink.setAttribute('href','https://google.com');
+getatt = firstlink.hasAttribute('href');
+console.log(getatt); // true
+getatt = firstlink.hasAttribute('title');
+console.log(getatt); // false
+
+
 
 
 // ClassName,TagName တွေကိုခေါ်မယ်ဆိုရင် HTML Collection နဲ့ထွက်မယ်။ HTML Collection နဲ့ထွက်ရင် တန်းပြီးတော့ Looping ပတ်လို့မရဘူး။ HTMLCollection ကို Array.from နဲ့ pure Array ပြောင်းပြီးမှ looping ပတ်လို့ရမယ်
