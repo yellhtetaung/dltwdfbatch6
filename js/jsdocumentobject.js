@@ -313,6 +313,212 @@ console.log(getatt); // true
 getatt = firstlink.hasAttribute('title');
 console.log(getatt); // false
 
+// addEventListener(eventtype, callbackfunctin)
+
+const clearbtn = document.querySelector('.clear-tasks');
+
+// Method 1
+// clearbtn.addEventListener('click', function(e){
+//     console.log('hay i am working');
+
+//     e.preventDefault();
+// });
+
+// Method 2
+clearbtn.addEventListener('click',myclick);
+
+function myclick(e){
+    // console.log('hay my click');
+
+    let val;
+    val = e;
+
+    // Event target element
+    val = e.target;
+    val = e.target.id;
+    val = e.target.className;
+    val = e.target.classList; // DOM Token List
+
+    // e.target.innerText = 'Finished';
+
+    // Event Type
+    val = e.type;
+
+    // Coordinates event - relative to the window
+    val = e.clientX;
+    val = e.clientY;
+
+    // Coordinates event - relative to the element
+    val = e.offsetX;
+    val = e.offsetY;
+
+    console.log(val)
+
+    e.preventDefault();
+}
+
+// MouseEvent
+
+const clbtn = document.querySelector('.clear-tasks');
+const card = document.querySelector('.card');
+const heading = document.querySelector('h2');
+// console.log(heading);
+
+// single click
+// clbtn.addEventListener('click', mouseeventtype);
+
+// double click
+// clbtn.addEventListener('dbclick', mouseeventtype);
+
+// mousedown
+// clbtn.addEventListener('mousedown', mouseeventtype);
+
+// mouseup
+// clbtn.addEventListener('mouseup', mouseeventtype);
+
+// mouseenter
+// card.addEventListener('mouseenter', mouseeventtype);
+
+// mouseleave
+// card.addEventListener('mouseleave', mouseeventtype);
+
+// mouseover
+// card.addEventListener('mouseover', mouseeventtype);
+
+// mousemove
+// card.addEventListener('mousemove', mouseeventtype);
+
+
+function mouseeventtype(e){
+    console.log(`Event type = ${e.type}`);
+    heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+    // document.body.style.backgroundColor = `rgba(${e.offsetX},${e.offsetY},1)`;
+
+    e.preventDefault();
+}
+
+const formel = document.querySelector('form');
+
+// formel.addEventListener('submit', inputeventtype);
+
+// function inputeventtype(e){
+//     console.log(`Event type = ${e.type}`);
+
+//     e.preventDefault();
+// }
+
+const inputtask = document.getElementById('task');
+const geth2 = document.querySelector('h2');
+
+// keydown
+// inputtask.addEventListener('keydown', inputeventtype);
+
+// keyup
+// inputtask.addEventListener('keyup', inputeventtype);
+
+// keypress
+// inputtask.addEventListener('keypress', inputeventtype);
+
+// input
+// inputtask.addEventListener('input', inputeventtype);
+
+// focus // cursor ချတာနဲ့အလုပ်လုပ်မယ်
+// inputtask.addEventListener('focus', inputeventtype);
+
+// blur
+// inputtask.addEventListener('blur', inputeventtype);
+
+// cut
+// inputtask.addEventListener('cut', inputeventtype);
+
+// paste
+// inputtask.addEventListener('paste', inputeventtype);
+
+// copy
+// inputtask.addEventListener('copy', inputeventtype);
+
+
+// function inputeventtype(e){
+//     console.log(`Event type = ${e.type}`); 
+//     console.log(e.target.value);
+//     geth2.textContent = e.target.value;
+// }
+
+
+// Event Bubbling
+
+// document.querySelector('.card-title').addEventListener('click', function(){
+//     console.log('i am card-title');
+// });
+
+// document.querySelector('.card-content').addEventListener('click', function(){
+//     console.log('i am card-content');
+// });
+
+// document.querySelector('.card').addEventListener('click', function(){
+//     console.log('i am card');
+// });
+
+
+// Event Delegation
+
+// const deleitem = document.querySelector('.delete-item');
+// deleitem.addEventListener('click', deleteitem);
+
+// function deleteitem(e){
+//     console.log('i am delete item');
+
+//     console.log(e.target);
+
+//     e.preventDefault();
+// }
+
+document.body.addEventListener('click', evendelg);
+
+function evendelg(e){
+    // console.log('i am working');
+    // console.log(e.target);
+
+    // if(e.target.className === 'fa-solid fa-trash-can'){
+    //     console.log('hay i am trash can');
+    // }
+
+    // if(e.target.parentElement.className === 'delete-item'){
+    //     console.log('i am delete item a tag');
+    // }
+
+    // if(e.target.parentElement.className === 'delete-item delete-me'){
+    //     console.log('i am delete item a tag');
+    // }
+
+    if(e.target.parentElement.classList.contains('delete-item')){
+        // console.log('i am delete item a tag');
+
+        // i
+        // e.target.remove();
+
+        // i      a
+        e.target.parentElement.remove();
+
+        // i        a           li
+        e.target.parentElement.parentElement.remove();
+    };
+
+    e.preventDefault();
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

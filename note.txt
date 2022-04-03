@@ -599,12 +599,8 @@ Conic-gradient
 
 console ပေါ်မှာ တွက်ချက်မှုက ram ပေါ်မှာပဲ run တာဖြစ်တဲ့အတွက်ကြောင့် refresh လုပ်ရင် ပျောက်သွားပါတယ်။ console က temporary storage တစ်ခုသာဖြစ်တယ်။
 
-number တွေဆို '' or " " မလိုဘူး။
-string တွေဆို '' or " " ထဲထည့်ရေးရပါတယ်။
-
-number တွေအချင်းချင်း + လို့ရတယ်။number ဆိုရင် calculation လုပ်ငန်းကို လုပ်ဆောင်ပေးတယ်။
-
-string တွေအချင်းချင်းလည်း + လို့ရတယ်။ string ဆိုရင် concat လုပ်ပေးတယ်။
+number တွေဆို '' or "" မလိုဘူး။
+string တွေဆို '' or "" or ``ထဲထည့်ရေးရပါတယ်။
 
 Datatype
 
@@ -617,7 +613,17 @@ JS 2 types
 1. Internal Style
 2. External Style
 
-console မှာ အဖြေထုတ်ချင်ရင် console.log(); နဲ့ ထုတ်ရတယ်။
+console မှာ အဖြေထုတ်ချင်ရင် console.log(); နဲ့ ထုတ်ရတယ်။ 
+value အမျာကြီးထုတ်ချင်ရင် console.log(value,value,value) နဲ့ ထုတ်ရတယ်။ 
+function မှာ multi parameter value တွေထည့်ချင်ရင် တစ်ခုနဲ့တစ်ခုကြားမှာ , ထည့်ပေးရမယ်။
+
+number + number = number
+number + string = string
+string + string = string
+number + boolean(true = 1 / false = 0) = number
+string + boolean = string
+
++ sign သည် number တွေကို calculation လုပ်ငန်းစဉ်ကို လုပ်ဆောင်ပေးပြီးတော့ string တွေဆိုရင် concatenate လုပ်ငန်းစဉ်ကို လုပ်ဆောင်ပေးတယ်။
 
 widnows.alert(); or alert(); widnows မှာ alert ထုတ်ပြချင်ရင် သုံးတယ်။ ok မနှိပ်မချင်းအလုပ် မလုပ်ဘူး။
 
@@ -694,3 +700,9 @@ undefined
 
 console.warn();
 console.error();
+
+
+keyword
+
+console.log();
+console.log(value,value,value);

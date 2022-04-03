@@ -82,6 +82,7 @@ body{
 
 .delete-item{
 	color:red;
+	text-decoration: none;
 }
 .clear-tasks{
 	background-color:red;
@@ -90,6 +91,7 @@ body{
 	padding:3px 5px;
 	cursor:pointer;
 	margin-bottom:10px;
+	text-decoration: none;
 }
 
 .card .moretasks{
