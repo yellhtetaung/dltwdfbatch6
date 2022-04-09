@@ -589,7 +589,7 @@ padding: 10px 30px;
 top&bottom  left&right
 
 padding: 10px 10px 10px 10px;
-top righ bottom left
+top right bottom left
 
 Conic-gradient
 ခမောက်ပုံလည်သွားတယ်။ လက်ယာရစ် ပတ်သွားတယ်။
@@ -628,16 +628,20 @@ string + boolean = string
 widnows.alert(); or alert(); widnows မှာ alert ထုတ်ပြချင်ရင် သုံးတယ်။ ok မနှိပ်မချင်းအလုပ် မလုပ်ဘူး။
 
 Comments
-
 // single line comment
 
 /* */ multi line comment
 
-Variable
+Backticks(``)
+${} ကို `` ထဲမှာပဲ ရေးလို့ရတယ်။
 
+Variable
 const (overwrite လုပ်လို့မရဘူး/value မပေးလို့မရဘူး)
 var (keyword ထပ်ခေါ်ပြီး assign လုပ်လို့ရတယ်)
 let	(reassign ပဲ လုပ်လို့ရတယ်။ keyword ထပ်ခေါ်ပြီး သုံးရင် error တက်မယ်။)
+
+Concatenate (+)
+numberic အချင်းချင်းဆိုရင် calculation လုပ်ငန်းစဉ်ကို လုပ်ဆောင်းပေးမယ်။ string တွေဆိုရင် တော့ concatenate လုပ်ငန်းစဉ်ကို လုပ်ဆောင်ပေးတယ်။
 
 We can use 
 letter,number,_,$.
@@ -662,6 +666,10 @@ var FirstName = "kyaw" //Pascal Case
 body မှာ ရေးချင်ရင် document.write() ထဲမှာရေးရတယ်။
 html code တွေကို "" or '' or `` ထဲမှာထည့်ရတယ်။
 
+Special Escape Character
+The backslash (\) escape character turns special characters into string characters.
+\' , \", \\
+
 id ကိုပြန်ခေါ်ချင်ရင် document.getElementById("")
 html က စာကိုပြောင်းချင်ရင် 
 .textContent=""
@@ -673,9 +681,16 @@ button ကို click လိုက်တာနဲ့ img တွေကို ပ
 button မှာ onclick="" ပေးပြီးတော့
 img ရဲ့ id ပြန်ခေါ်ပြီး document.getElementById("").src="directory" ပေးလိုက်ရင် ပြောင်းလို့ရပါတယ်။
 
-group declaration
+Template String (`${}`) (ES6)
+myliststyle = `
+	<ul>
+		<li>Name: ${name}</li>
+	</ul>
+`;
 
-let/var/const value, value, value;
+group declaration
+let/var/const variablename, variablename, variablename;
+const can use group declaration. but can't overwrite and declare;
 
 Arithmethic Operators (7 types)
 
@@ -687,22 +702,54 @@ Arithmethic Operators (7 types)
 ++  increment (Before operation/After operation)
 --  decrement
 
-js မှာ Day and date ခေါ်ချင်ရင် class method သုံးရတယ်။  
+After Operation 
+printout အရင် ထုတ်ပေးတယ်။ နောက်တစ်ကြိမ် printout ထုတ်မှာသာ 1 ပေါင်းတယ် or 1 နုတ်တယ်။
 
-new Date(); ကို သုံးတယ်။
+Before Operation 
+1 ပေါင်းပြီး or နုတ်ပြီး မှ printout ထုတ်တယ်။
 
-=> Data Type 
+Date and Time 
 
-string  ("" '' ``)
-number  (25)
-boolean (ture/false)
-undefined
+js မှာ Day and date ခေါ်ချင်ရင် class method သုံးရတယ်။
 
-console.warn();
-console.error();
+Date() format
+class Date(){
+	function getDate(){
 
+	}
+}
+
+Date objects
+new Date(); (OOP concept = primary method)
+new Date().getDate(); (child method)
+new Date().getHours(); 24 format
+new Date().getMinutes();
+new Date().getSeconds();
+new Date().getTime(); (digit number (1s = 1000ms) (1 jan 1970 to now))
+Date.now(); (same with getTime())
+new Date().getMonth(); (return index number because this is array (January 0 to December 11))
+new Date().getDay(); (return index number because this is array (Sunday 0 to Saturday 6))
+new Date().getFullYear();
+new Date().getUTCFullYear();
 
 keyword
 
 console.log();
 console.log(value,value,value);
+console.warn();
+console.error();
+window.alert();
+document.write();
+prompt();
+console.log(typeof value) (check datatype)
+new Date();
+new Date().getDate();
+new Date().getHours();
+new Date().getMinutes();
+new Date().getSeconds();
+new Date().getTime();
+Date.now();
+new Date().getMonth();
+new Date().getDay();
+new Date().getFullYear();
+new Date().getUTCFullYear();

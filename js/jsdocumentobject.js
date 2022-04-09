@@ -499,18 +499,49 @@ function evendelg(e){
         // e.target.remove();
 
         // i      a
-        e.target.parentElement.remove();
+        // e.target.parentElement.remove();
 
         // i        a           li
-        e.target.parentElement.parentElement.remove();
+        // e.target.parentElement.parentElement.remove();
     };
 
-    e.preventDefault();
+    // e.preventDefault();
 };
 
+document.querySelector('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    // console.log('hey i am working');
 
+    const getnewtask = document.getElementById('task').value;
+    // console.log(getnewtask);
 
+    // localStorage.setItem("mytask",getnewtask);
 
+    let alltasks;
+
+    if(localStorage.getItem('mytasks') === null){
+        alltasks = [];
+    }else{
+        alltasks = JSON.parse(localStorage.getItem('mytasks'));
+    }
+
+    alltasks.push(getnewtask);
+
+    // console.log(alltasks);
+
+    localStorage.setItem('mytasks', JSON.stringify(alltasks));
+});
+
+console.log(JSON.parse(localStorage.getItem('mytasks')));
+console.log(typeof localStorage.getItem('mytasks'));
+
+let getalltasks = localStorage.getItem('mytasks');
+getalltasks = JSON.parse(getalltasks);
+console.log(getalltasks);
+
+getalltasks.forEach(function(getalltask){
+    console.log(getalltask);
+});
 
 
 
