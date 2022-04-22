@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settimeout</title>
+</head>
+<body>
+
+<!-- 21/4/22 -->
+<!-- 2sec akyar lour mhr sar thar pyung chin yin -->
+
+
+	<div>
+		<h1 id="greeting">Welcome to our site</h1>
+	</div>
+
+
+	<hr/>
+
+	<div>
+		<button type="button" id="startalert" class="" onclick="startbtn()">Start Alert</button>
+		<button type="button" id="stopalert" class="" onclick="stopbtn()">Stop Alert</button>
+	</div>
+
+	<hr/>
+
+	<div>
+		<form action="" method="">
+			<input type="text" name="url" id="url" class="" />
+			<input type="button" id="urlbtn" class="" value="Go URL" onclick="gourl()"/>
+			<input type="button" id="favbtn" value="Fav URL" onclick="favurl('http://linkedin.com')"/>
+		</form>
+	</div>
+
+	<hr/>
+
+	<div>
+		<img id="img1" class="" width="200px" height="200px" onmouseover="imgover()" onmouseout="imgout()"/>
+	</div>
+
+	<hr/>
+
+	<div>
+		<img src="./img/icons/icon4.png" id="myimg" class="" alt="myimg" width="100"/>
+		<select name="size" id="size" onchange="imgsize(this)">
+			<option selected disabled>Select</option>
+			<option value="50">Small</option>
+			<option value="250">Medium</option>
+			<option value="350">Large</option>
+		</select>
+	</div>
+
+	<script type="text/javascript">
+
+		// For Greeting
+		
+		// window.setInterval(newmessage,2000);
+		window.setTimeout(newmessage,3000);
+
+		function newmessage(){
+			document.getElementById('greeting').textContent = 'See you later....';
+		}
+
+
+
+		// For Alert
+		
+		function mypopup(){
+			window.alert('Welcome Sir...');
+			}
+
+		let mytimer;
+
+		function startbtn(){
+			// console.log('i am start');
+
+			mypopup();
+
+			// window.setInterval(startbtn,2000); 
+			window.setTimeout(startbtn,2000);
+
+		}
+
+
+		function stopbtn(){
+			// console.log('i am stop');
+			window.clearInterval(mytimer);
+		}
+
+
+		// For URL
+
+		function gourl(){
+			// console.log('hay');
+			const geturl = document.getElementById('url').value;
+			// console.log('geturl');
+
+			window.location = "https://"+geturl;
+		}
+
+		function favurl(linkedin){
+			window.location = linkedin;
+		}
+
+		// Mouse Event
+		let getimg1 = document.getElementById('img1');
+
+		window.onload = function(){
+			getimg1.src = 'img/icons/icon1.png';
+		}
+
+		function imgover(){
+			getimg1.src = 'img/icons/icon2.png';
+		}
+
+		function imgout(){
+			getimg1.src = 'img/icons/icon3.png';
+		}
+
+		// For Image Size
+
+		function imgsize(th){
+			// let getsize = document.getElementById('size').value;
+			// console.log(getsize);
+
+			// console.log(th);
+			// console.log(th.value);
+
+			let getsize = th.value;
+			let getmyimg = document.getElementById('myimg');
+			// getmyimg.width = getsize;
+
+			console.log(getsize);
+
+			// by unit
+			getmyimg.style.width = getsize;
+
+			// console.log(th);
+			// console.log(th.parentElement);
+
+					// select div 
+			// console.log(th.parentElement.firstElementChild);
+		}
+
+	</script>
+
+<!-- 2166 -->
+</body>
+</html>
+
+
