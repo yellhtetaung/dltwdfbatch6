@@ -8,6 +8,13 @@ const minnum = document.querySelector('.minnumber'),
         message2 = document.querySelector('.message2');
 
 let min = 1,
-    max = 10,
-    gameleft = 3,
-    winningnum = 5;
+        max = 10,
+        gameleft = 3,
+        winningnum = 5;
+
+minnum.textContent = min;
+maxnum.innerText = max;
+
+getbtn.addEventListener('click', function(){
+        // console.log('hay i am working');
+})
