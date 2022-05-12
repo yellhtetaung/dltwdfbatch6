@@ -532,8 +532,8 @@ document.querySelector('form').addEventListener('submit', function(e){
     localStorage.setItem('mytasks', JSON.stringify(alltasks));
 });
 
-console.log(JSON.parse(localStorage.getItem('mytasks')));
-console.log(typeof localStorage.getItem('mytasks'));
+// console.log(JSON.parse(localStorage.getItem('mytasks')));
+// console.log(typeof localStorage.getItem('mytasks'));
 
 let getalltasks = localStorage.getItem('mytasks');
 getalltasks = JSON.parse(getalltasks);
