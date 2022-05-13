@@ -13,7 +13,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style type="text/css">
-
+        .banners{
+            height: 100vh;
+            background: linear-gradient(
+                20deg,
+                steelblue 30%,
+                skyblue 10%
+            );
+            background-size: 5%;
+            transition: all 2s;
+        }
+        .banners:hover{
+            background-size: 5.5%;
+            background-position: center;
+        }
+        .cardhovers:hover{
+            box-shadow: -7px 5px 5px rgba(0,0,0,0.3);
+        }
     </style>
 
 </head>
@@ -22,45 +38,182 @@
 
     <!-- Start Header Section -->
     <header>
+
         <!-- Start navbar -->
-        <nav class="navbar">
-            <a href="index.html" class="mx-3">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+            <a href="index.html" class="navbar-brand mx-3">
                 <img src="https://icon-library.com/images/icon-logo-png/icon-logo-png-11.jpg" width="50px" alt="sitelogo"/>
                 <span class="ms-2">PTT Software Co.,Ltd</span>
             </a>
 
-            <button type="button" class="btn btn-primary">abcd</button>
+            <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i></button>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Clients</a></li>
-                <li><a href="#">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Software</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#software" class="dropdown-item">Android App</a></li>
-                        <li><a href="#software" class="dropdown-item">IOS App</a></li>
-                        <li><a href="#software" class="dropdown-item">Linux App</a></li>
-                        <li><a href="#software" class="dropdown-item">Windows App</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div id="nav" class="navbar-collapse collapse justify-content-between">
 
-            <button type="button" class="btn btn-outline-primary btn-sm">Sign-up</button>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item"><a href="#home" class="nav-link text-uppercase fw-bold text-light">Home</a></li>
+                    <li class="nav-item"><a href="#clients" class="nav-link text-uppercase fw-bold text-light">Clients</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-uppercase fw-bold text-light">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link text-uppercase fw-bold text-light dropdown-toggle" data-bs-toggle="dropdown">Software</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#software" class="dropdown-item">Android App</a></li>
+                            <li><a href="#software" class="dropdown-item">IOS App</a></li>
+                            <li><a href="#software" class="dropdown-item">Linux App</a></li>
+                            <li><a href="#software" class="dropdown-item">Windows App</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link text-uppercase fw-bold text-light">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-uppercase fw-bold text-light">Contact</a></li>
+                </ul>
+    
+                <div class="px-3">
+                    <button type="button" class="btn btn-outline-light btn-sm">Sign-up</button>
+                </div>
+
+            </div>
 
         </nav>
         <!-- End navbar -->
 
-
-
         <!-- Start Banner -->
+        <section id="home">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center banners">
+                    <div class="col-md-10 text-center">
+                        <h1 class="text-capitalize display-2"><span class="fw-bold text-primary">PTT</span> <span class="text-white">software development company :</span></h1>
+                        <h2 class="text-white fst-italic fw-light">We help companies to digitalize their business.</h2>
+                        <p class="text-secondary">Properly set processes. Transparent cooperation. Predictable delivery.</p>
+                        <a href="#" class="btn btn-warning btn-lg rounded-0 px-4 mt-3">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- End Banner -->
 
     </header>
     <!-- End Header Section -->
+
+    <!-- Start Clinets Section -->
+    <section id="clients" class="bg-lignt">
+
+        <!-- Start title -->
+        <div class="container-fluid">
+            <div class="col-12 text-center">
+                <h1 class="text-warning display-3">Our Clients</h1>
+                <p class="text-muted lead">Projects We Successfully Developed.One look is worth a thousand words.</p>
+            </div>
+        </div>
+        <!--End title-->
+
+        <div class="container-fluid">
+            <div class="row text-center">
+
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-info cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Vehicles</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-info cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Mazda</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Vehicles</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-info cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Suzuki</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Vehicles</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-info cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">KIA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Vehicles</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-warning cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Communication Technology</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-warning cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Mi</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Communication Technology</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-warning cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Sony</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Communication Technology</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mx-auto mb-5">
+                    <div class="card bg-warning cardhovers">
+                        <div class="card-body">
+                            <h5 class="card-title">Oppo</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Communication Technology</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                            <a href="#" class="card-link">Website</a>
+                            <a href="#" class="card-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+            <hr/>
+        </div>
+
+    </section>
+    <!-- End Clients Section -->
 
     <!-- bootstrap css1 js2 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
