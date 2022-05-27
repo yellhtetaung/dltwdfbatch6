@@ -1,0 +1,24 @@
+git --version
+git
+
+ssh-keygen
+enter
+enter 
+enter
+
+ssh -T git@github.com
+
+git config --global user.name "yellhtetaung"
+git config --global user.email "yairhtet248.yha@gmail.com"
+
+git config user.name
+git config user.email
+
+git init
+git remote add origin repository-link
+git remote -v
+git status
+git add -A
+git commit -m "first"
+git push -u origin branchname
+
