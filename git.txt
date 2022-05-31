@@ -1,3 +1,4 @@
+=> Github
 git --version
 git
 
@@ -22,3 +23,14 @@ git add -A
 git commit -m "first"
 git push -u origin branchname
 
+=>Heroku
+
+heroku login
+
+git init
+heroku git:remote -a zenproject
+git add .
+git commit -am "29 May 2022"
+git push heroku master (error)
+
+heroku open
