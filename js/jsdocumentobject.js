@@ -90,7 +90,7 @@ console.log(listitems); // HTMLCollection
 let arritems = Array.from(listitems);
 console.log(arritems);
 
-arritems.forEach(function(arritem,index){
+arritems.forEach(function (arritem, index) {
     // console.log(arritems);
     // arritem.textContent = "Hello";
     // arritem.innerText = `${index} : Hello`;
@@ -179,16 +179,16 @@ let par = getfirstli.parentElement;
 // console.log(par);
 
 // Next Element Sibling
-        // list item 1 list item 2
+// list item 1 list item 2
 let sbl = getfirstli.nextElementSibling;
 
-    // list item 1  list item 2     list item 3         list item 4         list item 5      
+// list item 1  list item 2     list item 3         list item 4         list item 5      
 sbl = getfirstli.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
 
 // console.log(sbl);
 
 // Previous Element Sibling
-        // list item 1  list item 2         list item 3     list item 2
+// list item 1  list item 2         list item 3     list item 2
 let psbl = getfirstli.nextElementSibling.nextElementSibling.previousElementSibling;
 console.log(psbl);
 
@@ -231,7 +231,6 @@ newli.appendChild(newlink);
 document.querySelector('ul.list-group').appendChild(newli);
 
 // Replace Element
-
 const newtitle = document.createElement('h2');
 
 // Add ID
@@ -248,7 +247,7 @@ console.log(oldtitle);
 const getcardaction = document.querySelector('.card-action');
 
 // Replace Child(new,old)
-getcardaction.replaceChild(newtitle,oldtitle);
+getcardaction.replaceChild(newtitle, oldtitle);
 
 // Remove Element (self)
 const getlis = document.querySelectorAll('li'); // NodeList
@@ -307,7 +306,7 @@ firstlnk = firstlink.classList; // DOM Token List
 // Attribute
 let getatt = firstlink.getAttribute('href');
 // console.log(getatt);
-firstlink.setAttribute('href','https://google.com');
+firstlink.setAttribute('href', 'https://google.com');
 getatt = firstlink.hasAttribute('href');
 console.log(getatt); // true
 getatt = firstlink.hasAttribute('title');
@@ -325,9 +324,9 @@ const clearbtn = document.querySelector('.clear-tasks');
 // });
 
 // Method 2
-clearbtn.addEventListener('click',myclick);
+clearbtn.addEventListener('click', myclick);
 
-function myclick(e){
+function myclick(e) {
     // console.log('hay my click');
 
     let val;
@@ -389,7 +388,7 @@ const heading = document.querySelector('h2');
 // card.addEventListener('mousemove', mouseeventtype);
 
 
-function mouseeventtype(e){
+function mouseeventtype(e) {
     console.log(`Event type = ${e.type}`);
     heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
 
@@ -476,7 +475,7 @@ const geth2 = document.querySelector('h2');
 
 document.body.addEventListener('click', evendelg);
 
-function evendelg(e){
+function evendelg(e) {
     // console.log('i am working');
     // console.log(e.target);
 
@@ -492,7 +491,7 @@ function evendelg(e){
     //     console.log('i am delete item a tag');
     // }
 
-    if(e.target.parentElement.classList.contains('delete-item')){
+    if (e.target.parentElement.classList.contains('delete-item')) {
         // console.log('i am delete item a tag');
 
         // i
@@ -508,7 +507,7 @@ function evendelg(e){
     // e.preventDefault();
 };
 
-document.querySelector('form').addEventListener('submit', function(e){
+document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();
     // console.log('hey i am working');
 
@@ -519,9 +518,9 @@ document.querySelector('form').addEventListener('submit', function(e){
 
     let alltasks;
 
-    if(localStorage.getItem('mytasks') === null){
+    if (localStorage.getItem('mytasks') === null) {
         alltasks = [];
-    }else{
+    } else {
         alltasks = JSON.parse(localStorage.getItem('mytasks'));
     }
 
@@ -539,7 +538,7 @@ let getalltasks = localStorage.getItem('mytasks');
 getalltasks = JSON.parse(getalltasks);
 console.log(getalltasks);
 
-getalltasks.forEach(function(getalltask){
+getalltasks.forEach(function (getalltask) {
     console.log(getalltask);
 });
 
